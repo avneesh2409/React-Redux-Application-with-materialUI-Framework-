@@ -1,0 +1,15 @@
+00:24:41.995 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+00:24:42.008 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+00:25:19.327 | Info | 'Call RegisterUser API with an email : ' | Service: nema.pankaj@tftus.com | 
+00:25:19.452 | Error | 'Error :error: relation "register" does not exist' | Service: database | Method: RegisterUser | 
+00:27:32.779 | Info | 'Call RegisterUser API with an email : ' | Service: nema.pankaj@tftus.com | 
+00:27:32.888 | Error | 'Error :error: column "id" does not exist' | Service: database | Method: RegisterUser | 
+00:31:41.387 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+00:31:41.410 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+00:31:53.370 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+00:31:53.374 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+00:31:57.868 | Info | 'Call RegisterUser API with an email : ' | Service: nema.pankaj@tftus.com | 
+00:31:57.964 | Error | 'Error :error: column "id" does not exist' | Service: database | Method: RegisterUser | 
+00:32:04.758 | Info | 'Call RegisterUser API with an email : ' | Service: nema.pankaj@tftus.com | 
+00:32:04.850 | Error | 'Error :error: column "id" does not exist' | Service: database | Method: RegisterUser | 
+00:34:50.907 | Info | 'Call RegisterUser API with an email : ' | Service: nema.pankaj@tftus.com | 

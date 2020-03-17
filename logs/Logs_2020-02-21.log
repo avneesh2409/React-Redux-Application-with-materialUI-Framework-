@@ -1,0 +1,414 @@
+01:56:24.553 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+01:56:25.389 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+02:07:17.869 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+02:07:17.884 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:07:50.860 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:07:51.959 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:11:15.288 | Info | 'Call Authenticate API with an email : ' | 
+04:11:15.305 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:20:21.909 | Info | 'Call Authenticate API with an email : ' | 
+04:20:22.003 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:30:06.678 | Info | 'Call Authenticate API with an email : ' | 
+04:30:06.696 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:32:52.248 | Info | 'Call Authenticate API with an email : ' | 
+04:32:52.268 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:34:46.920 | Info | 'Call Authenticate API with an email : ' | 
+04:34:46.931 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:35:14.126 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:35:14.265 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:37:29.292 | Info | 'Call Authenticate API with an email : ' | 
+04:37:29.332 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:39:58.335 | Info | 'Call Authenticate API with an email : ' | 
+04:39:58.346 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:41:38.624 | Info | 'Call Authenticate API with an email : ' | 
+04:41:38.645 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:41:58.637 | Info | 'Call Authenticate API with an email : ' | 
+04:41:58.639 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:42:26.166 | Info | 'Call Authenticate API with an email : ' | 
+04:42:26.168 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:42:37.288 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:42:37.293 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:42:40.930 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:42:40.931 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:42:46.270 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:42:46.272 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:44:24.772 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:44:24.774 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:44:25.588 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:44:25.590 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:44:26.202 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:44:26.203 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:44:26.841 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:44:26.843 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:44:31.142 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com1 | 
+04:44:31.145 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:44:38.427 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:44:38.429 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:45:22.489 | Info | 'Call Authenticate API with an email : ' | 
+04:45:22.506 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:45:48.455 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:45:48.460 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:47:05.900 | Info | 'Call Authenticate API with an email : ' | 
+04:47:05.915 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:48:11.180 | Info | 'Call Authenticate API with an email : ' | 
+04:48:11.195 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:48:28.436 | Info | 'Call Authenticate API with an email : ' | 
+04:48:28.438 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:48:42.384 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:48:42.388 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:50:41.145 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:50:41.159 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:50:58.600 | Info | 'Call Authenticate API with an email : ' | 
+04:50:58.603 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:52:23.805 | Info | 'Call Authenticate API with an email : ' | 
+04:52:23.831 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:52:36.050 | Info | 'Call Authenticate API with an email : ' | 
+04:52:36.053 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:52:46.042 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:52:46.046 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:53:50.028 | Info | 'Call Authenticate API with an email : ' | 
+04:53:50.042 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:56:59.211 | Info | 'Call Authenticate API with an email : ' | 
+04:56:59.214 | Info | 'Option : ' | 
+04:56:59.237 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:56:59.237 | Info | 'Error : ' | Service: Email does not exits | 
+04:57:33.472 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+04:57:33.472 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+04:57:33.477 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:57:33.478 | Info | 'Result : ' | Service: [object Object] | 
+04:58:44.056 | Info | 'Call Authenticate API with an email : ' | 
+04:58:44.058 | Info | 'Option : ' | 
+04:58:44.069 | Info | 'Error : ' | Service: Email does not exits | 
+04:58:44.069 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:59:11.969 | Info | 'Call Authenticate API with an email : ' | 
+04:59:11.972 | Info | 'Option : ' | 
+04:59:11.984 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:59:11.984 | Info | 'Error : ' | Service: Email does not exits | 
+04:59:28.160 | Info | 'Call Authenticate API with an email : ' | 
+04:59:28.164 | Info | 'Option : ' | 
+04:59:28.188 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:59:28.189 | Info | 'Error : ' | Service: Email does not exits | 
+04:59:39.919 | Info | 'Call Authenticate API with an email : ' | 
+04:59:39.922 | Info | 'Option : ' | 
+04:59:39.931 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:59:39.932 | Info | 'Error : ' | Service: Email does not exits | 
+04:59:49.041 | Info | 'Call Authenticate API with an email : ' | 
+04:59:49.045 | Info | 'Option : ' | 
+04:59:49.060 | Info | 'Error : ' | Service: Email does not exits | 
+04:59:49.059 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:00:53.384 | Info | 'Call Authenticate API with an email : ' | 
+05:00:53.387 | Info | 'Option : ' | 
+05:00:53.398 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:00:53.398 | Info | 'Error : ' | Service: Email does not exits | 
+05:01:13.509 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:01:13.509 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:01:13.514 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:13.514 | Info | 'Result : ' | Service: [object Object] | 
+05:01:53.211 | Info | 'Call Authenticate API with an email : ' | 
+05:01:53.211 | Info | 'Option : ' | 
+05:01:53.214 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:53.215 | Info | 'Error : ' | Service: Email does not exits | 
+05:01:54.364 | Info | 'Call Authenticate API with an email : ' | 
+05:01:54.364 | Info | 'Option : ' | 
+05:01:54.365 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:54.366 | Info | 'Error : ' | Service: Email does not exits | 
+05:01:54.849 | Info | 'Call Authenticate API with an email : ' | 
+05:01:54.849 | Info | 'Option : ' | 
+05:01:54.851 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:54.851 | Info | 'Error : ' | Service: Email does not exits | 
+05:01:55.837 | Info | 'Call Authenticate API with an email : ' | 
+05:01:55.837 | Info | 'Option : ' | 
+05:01:55.838 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:55.839 | Info | 'Error : ' | Service: Email does not exits | 
+05:01:56.483 | Info | 'Call Authenticate API with an email : ' | 
+05:01:56.484 | Info | 'Option : ' | 
+05:01:56.485 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:56.485 | Info | 'Error : ' | Service: Email does not exits | 
+05:01:56.853 | Info | 'Call Authenticate API with an email : ' | 
+05:01:56.853 | Info | 'Option : ' | 
+05:01:56.855 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:56.855 | Info | 'Error : ' | Service: Email does not exits | 
+05:01:57.506 | Info | 'Call Authenticate API with an email : ' | 
+05:01:57.506 | Info | 'Option : ' | 
+05:01:57.508 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:57.509 | Info | 'Error : ' | Service: Email does not exits | 
+05:01:57.769 | Info | 'Call Authenticate API with an email : ' | 
+05:01:57.770 | Info | 'Option : ' | 
+05:01:57.772 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:57.773 | Info | 'Error : ' | Service: Email does not exits | 
+05:01:58.380 | Info | 'Call Authenticate API with an email : ' | 
+05:01:58.380 | Info | 'Option : ' | 
+05:01:58.382 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:58.382 | Info | 'Error : ' | Service: Email does not exits | 
+05:01:58.634 | Info | 'Call Authenticate API with an email : ' | 
+05:01:58.634 | Info | 'Option : ' | 
+05:01:58.636 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:58.636 | Info | 'Error : ' | Service: Email does not exits | 
+05:01:59.243 | Info | 'Call Authenticate API with an email : ' | 
+05:01:59.243 | Info | 'Option : ' | 
+05:01:59.244 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:59.245 | Info | 'Error : ' | Service: Email does not exits | 
+05:01:59.577 | Info | 'Call Authenticate API with an email : ' | 
+05:01:59.577 | Info | 'Option : ' | 
+05:01:59.579 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:59.579 | Info | 'Error : ' | Service: Email does not exits | 
+05:02:00.408 | Info | 'Call Authenticate API with an email : ' | 
+05:02:00.408 | Info | 'Option : ' | 
+05:02:00.410 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:02:00.410 | Info | 'Error : ' | Service: Email does not exits | 
+05:02:00.722 | Info | 'Call Authenticate API with an email : ' | 
+05:02:00.722 | Info | 'Option : ' | 
+05:02:00.724 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:02:00.724 | Info | 'Error : ' | Service: Email does not exits | 
+05:02:02.240 | Info | 'Call Authenticate API with an email : ' | 
+05:02:02.241 | Info | 'Option : ' | 
+05:02:02.242 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:02:02.243 | Info | 'Error : ' | Service: Email does not exits | 
+05:02:02.723 | Info | 'Call Authenticate API with an email : ' | 
+05:02:02.724 | Info | 'Option : ' | 
+05:02:02.725 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:02:02.726 | Info | 'Error : ' | Service: Email does not exits | 
+05:02:05.618 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:02:05.618 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:02:05.620 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:02:05.620 | Info | 'Result : ' | Service: [object Object] | 
+05:02:20.585 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:02:20.587 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:02:20.602 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:02:20.602 | Info | 'Result : ' | Service: [object Object] | 
+05:02:21.389 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:02:21.389 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:02:21.392 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:02:21.392 | Info | 'Result : ' | Service: [object Object] | 
+05:02:23.650 | Info | 'Call Authenticate API with an email : ' | 
+05:02:23.651 | Info | 'Option : ' | 
+05:02:23.653 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:02:23.653 | Info | 'Error : ' | Service: Email does not exits | 
+05:02:24.293 | Info | 'Call Authenticate API with an email : ' | 
+05:02:24.293 | Info | 'Option : ' | 
+05:02:24.294 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:02:24.295 | Info | 'Error : ' | Service: Email does not exits | 
+05:02:24.683 | Info | 'Call Authenticate API with an email : ' | 
+05:02:24.684 | Info | 'Option : ' | 
+05:02:24.686 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:02:24.686 | Info | 'Error : ' | Service: Email does not exits | 
+05:02:27.524 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:02:27.525 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:02:27.527 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:02:27.527 | Info | 'Result : ' | Service: [object Object] | 
+05:04:13.977 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:04:13.980 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:04:13.993 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:04:13.994 | Info | 'Result : ' | Service: [object Object] | 
+05:04:15.034 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:04:15.035 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:04:15.037 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:04:15.038 | Info | 'Result : ' | Service: [object Object] | 
+05:04:17.009 | Info | 'Call Authenticate API with an email : ' | 
+05:04:17.010 | Info | 'Option : ' | 
+05:04:17.011 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:04:17.012 | Info | 'Error : ' | Service: Email does not exits | 
+05:04:19.369 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:04:19.369 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:04:19.371 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:04:19.372 | Info | 'Result : ' | Service: [object Object] | 
+05:04:56.825 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:04:56.829 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:04:56.847 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:04:56.848 | Info | 'Result : ' | Service: [object Object] | 
+05:06:01.666 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:06:01.667 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:06:01.670 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:06:01.671 | Info | 'Result : ' | Service: [object Object] | 
+05:07:00.166 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:07:00.169 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:07:00.184 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:07:00.184 | Info | 'Result : ' | Service: [object Object] | 
+05:08:54.497 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:08:54.501 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:08:54.512 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:08:54.513 | Info | 'Result : ' | Service: [object Object] | 
+05:12:18.413 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:12:18.416 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:12:18.429 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:12:18.429 | Info | 'Result : ' | Service: [object Object] | 
+05:12:21.116 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:12:21.117 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:12:21.121 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:12:21.121 | Info | 'Result : ' | Service: [object Object] | 
+05:12:21.704 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:12:21.704 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:12:21.706 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:12:21.707 | Info | 'Result : ' | Service: [object Object] | 
+05:12:22.124 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:12:22.125 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:12:22.126 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:12:22.127 | Info | 'Result : ' | Service: [object Object] | 
+05:13:50.236 | Info | 'Call Authenticate API with an email : ' | 
+05:13:50.239 | Info | 'Option : ' | 
+05:13:50.249 | Info | 'Error : ' | Service: Email does not exits | 
+05:13:50.248 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:14:04.606 | Info | 'Call Authenticate API with an email : ' | 
+05:14:04.606 | Info | 'Option : ' | 
+05:14:04.609 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:14:04.609 | Info | 'Error : ' | Service: Email does not exits | 
+05:15:12.170 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:15:12.173 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:15:12.185 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:15:12.186 | Info | 'Result : ' | Service: [object Object] | 
+05:17:25.804 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:17:25.807 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:17:25.830 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:17:25.831 | Info | 'Result : ' | Service: [object Object] | 
+06:03:51.427 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+06:03:51.431 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+06:03:51.961 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+06:03:51.961 | Info | 'Result : ' | Service: [object Object] | 
+06:05:11.599 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+06:05:11.599 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+06:05:11.603 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+06:05:11.605 | Info | 'Result : ' | Service: [object Object] | 
+06:05:23.197 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+06:05:23.197 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+06:05:23.199 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+06:05:23.200 | Info | 'Result : ' | Service: [object Object] | 
+06:05:24.289 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+06:05:24.290 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+06:05:24.292 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+06:05:24.293 | Info | 'Result : ' | Service: [object Object] | 
+06:05:41.379 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+06:05:41.380 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+06:05:41.382 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+06:05:41.382 | Info | 'Result : ' | Service: [object Object] | 
+20:33:00.895 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:33:00.898 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:33:01.105 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:33:01.107 | Info | 'Result : ' | Service: [object Object] | 
+20:43:55.153 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:43:55.152 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:43:55.158 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:43:55.158 | Info | 'Result : ' | Service: [object Object] | 
+20:43:56.335 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:43:56.335 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:43:56.337 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:43:56.338 | Info | 'Result : ' | Service: [object Object] | 
+20:44:00.151 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:44:00.151 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:44:00.153 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:44:00.154 | Info | 'Result : ' | Service: [object Object] | 
+20:44:01.087 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:44:01.087 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:44:01.089 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:44:01.089 | Info | 'Result : ' | Service: [object Object] | 
+20:44:01.597 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:44:01.596 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:44:01.599 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:44:01.600 | Info | 'Result : ' | Service: [object Object] | 
+20:44:02.141 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:44:02.141 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:44:02.144 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:44:02.144 | Info | 'Result : ' | Service: [object Object] | 
+20:44:03.554 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:44:03.554 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:44:03.556 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:44:03.557 | Info | 'Result : ' | Service: [object Object] | 
+20:44:04.379 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:44:04.379 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:44:04.381 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:44:04.382 | Info | 'Result : ' | Service: [object Object] | 
+20:44:32.442 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:44:32.442 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:44:32.444 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:44:32.445 | Info | 'Result : ' | Service: [object Object] | 
+20:48:19.562 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:48:19.563 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:48:19.565 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:48:19.565 | Info | 'Result : ' | Service: [object Object] | 
+20:48:20.438 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:48:20.439 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:48:20.440 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:48:20.441 | Info | 'Result : ' | Service: [object Object] | 
+20:48:21.506 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:48:21.507 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:48:21.509 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:48:21.509 | Info | 'Result : ' | Service: [object Object] | 
+20:48:22.146 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:48:22.146 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:48:22.148 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:48:22.150 | Info | 'Result : ' | Service: [object Object] | 
+20:48:22.635 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+20:48:22.635 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+20:48:22.637 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+20:48:22.638 | Info | 'Result : ' | Service: [object Object] | 
+21:13:49.379 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+21:13:49.380 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+21:13:49.383 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:13:49.383 | Info | 'Result : ' | Service: [object Object] | 
+21:50:24.627 | Info | 'Call Authenticate API with an email : ' | Service: sac | 
+21:50:24.630 | Info | 'Option : ' | Service: sac | 
+21:50:24.643 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:50:24.644 | Info | 'Error : ' | Service: Email does not exits | 
+21:50:50.197 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+21:50:50.201 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+21:50:50.222 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:50:50.223 | Info | 'Error : ' | Service: Email does not exits | 
+21:50:52.754 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+21:50:52.754 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+21:50:52.757 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:50:52.758 | Info | 'Error : ' | Service: Email does not exits | 
+21:50:54.312 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+21:50:54.313 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+21:50:54.315 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:50:54.315 | Info | 'Error : ' | Service: Email does not exits | 
+21:52:18.479 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+21:52:18.481 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+21:52:18.491 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:52:18.492 | Info | 'Error : ' | Service: Email does not exits | 
+21:52:20.950 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+21:52:20.951 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+21:52:20.953 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:52:20.954 | Info | 'Error : ' | Service: Email does not exits | 
+21:52:21.721 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+21:52:21.722 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+21:52:21.723 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:52:21.724 | Info | 'Error : ' | Service: Email does not exits | 
+21:52:22.383 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+21:52:22.384 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+21:52:22.385 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:52:22.386 | Info | 'Error : ' | Service: Email does not exits | 
+22:28:24.982 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+22:28:24.985 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+22:28:25.000 | Info | 'Error : ' | Service: Email does not exits | 
+22:28:25.000 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+22:28:25.753 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+22:28:25.753 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+22:28:25.756 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+22:28:25.756 | Info | 'Error : ' | Service: Email does not exits | 
+22:28:30.628 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+22:28:30.629 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+22:28:30.630 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+22:28:30.631 | Info | 'Error : ' | Service: Email does not exits | 
+22:28:31.261 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+22:28:31.262 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+22:28:31.264 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+22:28:31.264 | Info | 'Error : ' | Service: Email does not exits | 
+22:28:33.575 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+22:28:33.575 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+22:28:33.576 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+22:28:33.577 | Info | 'Error : ' | Service: Email does not exits | 
+22:28:34.014 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+22:28:34.015 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+22:28:34.016 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+22:28:34.017 | Info | 'Error : ' | Service: Email does not exits | 
+23:35:42.023 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+23:35:42.024 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+23:35:42.050 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+23:35:42.051 | Info | 'Error : ' | Service: Email does not exits | 
+23:37:27.664 | Info | 'Call Authenticate API with an email : ' | Service: neevmansoori@gmail.com | 
+23:37:27.667 | Info | 'Option : ' | Service: neevmansoori@gmail.com | 
+23:37:27.680 | Info | 'Error : ' | Service: Email does not exits | 
+23:37:27.679 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+23:37:47.979 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+23:37:47.979 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+23:37:47.983 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+23:37:47.984 | Info | 'Result : ' | Service: [object Object] | 

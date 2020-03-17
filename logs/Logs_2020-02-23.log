@@ -1,0 +1,4 @@
+21:01:05.422 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+21:01:05.465 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+21:01:06.226 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:01:06.227 | Info | 'Result : ' | Service: [object Object] | 

@@ -1,0 +1,87 @@
+00:46:58.780 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+00:46:58.785 | Info | 'Option : ' | Service: admin@imali.com | 
+00:46:58.903 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+00:46:58.904 | Info | 'Result : ' | Service: [object Object] | 
+01:01:48.515 | Error | 'Error :error: column role.id does not exist' | Service: database | Method: MyProfile | 
+01:03:20.348 | Error | 'Error :error: column role.id does not exist' | Service: database | Method: MyProfile | 
+01:06:18.612 | Error | 'Error :error: column role.roleid does not exist' | Service: database | Method: MyProfile | 
+01:06:37.671 | Error | 'Error :error: column role.id does not exist' | Service: database | Method: MyProfile | 
+01:06:51.280 | Error | 'Error :error: column role.id does not exist' | Service: database | Method: MyProfile | 
+01:31:37.275 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+01:31:37.276 | Info | 'Option : ' | Service: admin@imali.com | 
+01:31:37.282 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:31:37.283 | Info | 'Result : ' | Service: [object Object] | 
+03:00:22.125 | Info | 'Call RegisterUser API with an email : ' | Service: sureshsharma@gmail.com | 
+03:16:36.805 | Info | 'Call RegisterUser API with an email : ' | Service: asldkhsakdjaskjd@gmail.com | 
+03:20:12.443 | Info | 'Call RegisterUser API with an email : ' | Service: mansoori.nayeem.tft@gmail.com | 
+03:46:10.111 | Error | 'Error :error: bind message supplies 1 parameters, but prepared statement "" requires 0' | Service: database | Method: MyProfile | 
+03:47:42.902 | Error | 'Error :error: bind message supplies 1 parameters, but prepared statement "" requires 0' | Service: database | Method: MyProfile | 
+03:54:02.017 | Info | 'Call RegisterUser API with an email : ' | Service: sureshsharma@gmail.com | 
+03:57:22.590 | Info | 'Call RegisterUser API with an email : ' | Service: sureshsharma@gmail.com | 
+04:23:44.664 | Info | 'Call RegisterUser API with an email : ' | Service: sureshsharma@gmail.com | 
+04:24:34.294 | Info | 'Call RegisterUser API with an email : ' | Service: sureshsharma@gmail.com | 
+04:27:06.067 | Info | 'Call RegisterUser API with an email : ' | Service: sureshsharma@gmail.com | 
+04:33:53.109 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+04:33:53.110 | Info | 'Option : ' | Service: admin@imali.com | 
+04:33:53.460 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:33:53.461 | Info | 'Result : ' | Service: [object Object] | 
+04:36:54.473 | Info | 'Call RegisterUser API with an email : ' | Service: sureshsharma@gmail.com | 
+04:45:18.748 | Info | 'Call RegisterUser API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+04:46:24.121 | Info | 'Call RegisterUser API with an email : ' | Service: nayeem@gmail.com | 
+04:46:24.191 | Info | 'Call RegisterUser API with an email : ' | Service: nayeem@gmail.com | 
+05:20:46.538 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+05:20:46.539 | Info | 'Option : ' | Service: admin@imali.com | 
+05:20:46.546 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:20:46.547 | Info | 'Result : ' | Service: [object Object] | 
+05:21:40.992 | Info | 'Call RegisterUser API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+05:22:12.629 | Info | 'Call RegisterUser API with an email : ' | Service: namandubey@gmail.com | 
+05:22:12.700 | Info | 'Call RegisterUser API with an email : ' | Service: namandubey@gmail.com | 
+05:51:41.347 | Info | 'Call Authenticate API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+05:51:41.347 | Info | 'Option : ' | Service: avneeshdwivedi.tft@gmail.com | 
+05:51:41.349 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:51:41.350 | Info | 'Result : ' | Service: [object Object] | 
+21:45:20.798 | Info | 'Option : ' | Service: ksdhaksjdhsj | 
+21:45:20.797 | Info | 'Call Authenticate API with an email : ' | Service: ksdhaksjdhsj | 
+21:45:22.278 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:45:22.280 | Info | 'Error : ' | Service: Email does not exits | 
+21:45:32.829 | Info | 'Call Authenticate API with an email : ' | Service: jdfksfhsakdjfh | 
+21:45:32.830 | Info | 'Option : ' | Service: jdfksfhsakdjfh | 
+21:45:32.832 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:45:32.832 | Info | 'Error : ' | Service: Email does not exits | 
+21:45:32.849 | Info | 'Call Authenticate API with an email : ' | Service: jdfksfhsakdjfh | 
+21:45:32.850 | Info | 'Option : ' | Service: jdfksfhsakdjfh | 
+21:45:32.852 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:45:32.852 | Info | 'Error : ' | Service: Email does not exits | 
+21:45:43.175 | Info | 'Option : ' | Service: dsjfbdsfdsjfbsjgdskjghkj | 
+21:45:43.174 | Info | 'Call Authenticate API with an email : ' | Service: dsjfbdsfdsjfbsjgdskjghkj | 
+21:45:43.176 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:45:43.176 | Info | 'Error : ' | Service: Email does not exits | 
+21:45:55.754 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+21:45:55.755 | Info | 'Option : ' | Service: admin@imali.com | 
+21:45:55.756 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:45:55.757 | Info | 'Error : ' | Service: Email does not exits | 
+21:46:07.869 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+21:46:07.869 | Info | 'Option : ' | Service: admin@imali.com | 
+21:46:07.871 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:46:07.871 | Info | 'Error : ' | Service: Email does not exits | 
+21:46:18.659 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+21:46:18.660 | Info | 'Option : ' | Service: admin@imali.com | 
+21:46:18.662 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:46:18.663 | Info | 'Error : ' | Service: Email does not exits | 
+21:46:44.551 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+21:46:44.552 | Info | 'Option : ' | Service: admin@imali.com | 
+21:46:44.553 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:46:44.554 | Info | 'Error : ' | Service: Email does not exits | 
+21:47:30.356 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+21:47:30.356 | Info | 'Option : ' | Service: admin@imali.com | 
+21:47:30.357 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:47:30.358 | Info | 'Error : ' | Service: Email does not exits | 
+21:52:44.273 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+21:52:44.274 | Info | 'Option : ' | Service: admin@imali.com | 
+21:52:44.276 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+21:52:44.277 | Info | 'Result : ' | Service: [object Object] | 
+21:53:49.231 | Info | 'Call RegisterUser API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+22:17:47.385 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+22:17:47.386 | Info | 'Option : ' | Service: admin@imali.com | 
+22:17:47.392 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+22:17:47.393 | Info | 'Result : ' | Service: [object Object] | 

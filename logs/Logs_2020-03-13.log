@@ -1,0 +1,163 @@
+00:45:02.638 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+00:45:02.641 | Info | 'Option : ' | Service: admin@imali.com | 
+00:45:02.811 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+00:45:02.811 | Info | 'Result : ' | Service: [object Object] | 
+00:46:08.973 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+00:46:08.974 | Info | 'Option : ' | Service: admin@imali.com | 
+00:46:08.980 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+00:46:08.980 | Info | 'Result : ' | Service: [object Object] | 
+00:55:26.230 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+00:55:26.230 | Info | 'Option : ' | Service: admin@imali.com | 
+00:55:26.297 | Info | 'Result : ' | Service: [object Object] | 
+00:55:26.297 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+00:56:58.476 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+00:56:58.477 | Info | 'Option : ' | Service: admin@imali.com | 
+00:56:58.492 | Error | 'Error :error: bind message supplies 1 parameters, but prepared statement "" requires 0' | Service: database | Method: Authenticate | 
+01:00:25.351 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+01:00:25.352 | Info | 'Option : ' | Service: admin@imali.com | 
+01:00:25.359 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:00:25.360 | Info | 'Result : ' | Service: [object Object] | 
+01:11:40.433 | Info | 'Call RegisterUser API with an email : ' | Service: anonymoususer@gmail.com | 
+01:14:49.547 | Info | 'Call RegisterUser API with an email : ' | Service: anonymoususer@gmail.com | 
+01:16:24.944 | Info | 'Call Authenticate API with an email : ' | Service: anonymoususer@gmail.com | 
+01:16:24.944 | Info | 'Option : ' | Service: anonymoususer@gmail.com | 
+01:16:24.946 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:16:24.947 | Info | 'Result : ' | Service: [object Object] | 
+01:16:30.931 | Info | 'Call Authenticate API with an email : ' | Service: anonymoususer@gmail.com | 
+01:16:30.932 | Info | 'Option : ' | Service: anonymoususer@gmail.com | 
+01:16:30.933 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:16:30.933 | Info | 'Result : ' | Service: [object Object] | 
+01:46:22.071 | Info | 'Call Authenticate API with an email : ' | Service: anonymoususer@gmail.com | 
+01:46:22.072 | Info | 'Option : ' | Service: anonymoususer@gmail.com | 
+01:46:22.078 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:46:22.079 | Info | 'Result : ' | Service: [object Object] | 
+01:51:00.239 | Info | 'Call Authenticate API with an email : ' | Service: kjasddasdaskh | 
+01:51:00.240 | Info | 'Option : ' | Service: kjasddasdaskh | 
+01:51:00.246 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:51:00.247 | Info | 'Error : ' | Service: Email does not exits | 
+01:51:03.603 | Info | 'Call Authenticate API with an email : ' | Service: kjasddasdaskh | 
+01:51:03.604 | Info | 'Option : ' | Service: kjasddasdaskh | 
+01:51:03.606 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:51:03.607 | Info | 'Error : ' | Service: Email does not exits | 
+01:52:12.944 | Info | 'Call Authenticate API with an email : ' | Service: asldjslkfhsdkfhsdkjh | 
+01:52:12.945 | Info | 'Option : ' | Service: asldjslkfhsdkfhsdkjh | 
+01:52:12.950 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:52:12.951 | Info | 'Error : ' | Service: Email does not exits | 
+01:52:15.300 | Info | 'Call Authenticate API with an email : ' | Service: asldjslkfhsdkfhsdkjh | 
+01:52:15.301 | Info | 'Option : ' | Service: asldjslkfhsdkfhsdkjh | 
+01:52:15.302 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:52:15.303 | Info | 'Error : ' | Service: Email does not exits | 
+01:52:39.811 | Info | 'Call Authenticate API with an email : ' | Service: askdjhkasjdhaksjhdksahd | 
+01:52:39.812 | Info | 'Option : ' | Service: askdjhkasjdhaksjhdksahd | 
+01:52:39.816 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:52:39.816 | Info | 'Error : ' | Service: Email does not exits | 
+01:52:41.362 | Info | 'Call Authenticate API with an email : ' | Service: askdjhkasjdhaksjhdksahd | 
+01:52:41.363 | Info | 'Option : ' | Service: askdjhkasjdhaksjhdksahd | 
+01:52:41.365 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:52:41.365 | Info | 'Error : ' | Service: Email does not exits | 
+01:52:41.689 | Info | 'Call Authenticate API with an email : ' | Service: askdjhkasjdhaksjhdksahd | 
+01:52:41.690 | Info | 'Option : ' | Service: askdjhkasjdhaksjhdksahd | 
+01:52:41.693 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:52:41.693 | Info | 'Error : ' | Service: Email does not exits | 
+01:52:41.831 | Info | 'Option : ' | Service: askdjhkasjdhaksjhdksahd | 
+01:52:41.830 | Info | 'Call Authenticate API with an email : ' | Service: askdjhkasjdhaksjhdksahd | 
+01:52:41.833 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:52:41.834 | Info | 'Error : ' | Service: Email does not exits | 
+01:52:49.189 | Info | 'Call Authenticate API with an email : ' | Service: askdjhkasjdhaksjhdksahd | 
+01:52:49.190 | Info | 'Option : ' | Service: askdjhkasjdhaksjhdksahd | 
+01:52:49.192 | Info | 'Error : ' | Service: Email does not exits | 
+01:52:49.191 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:52:50.696 | Info | 'Call Authenticate API with an email : ' | Service: askdjhkasjdhaksjhdksahd | 
+01:52:50.696 | Info | 'Option : ' | Service: askdjhkasjdhaksjhdksahd | 
+01:52:50.697 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:52:50.698 | Info | 'Error : ' | Service: Email does not exits | 
+01:53:43.569 | Info | 'Call Authenticate API with an email : ' | Service: namandubey@gmail.com | 
+01:53:43.570 | Info | 'Option : ' | Service: namandubey@gmail.com | 
+01:53:43.575 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:53:43.575 | Info | 'Error : ' | Service: Email does not exits | 
+01:53:47.838 | Info | 'Call Authenticate API with an email : ' | Service: namandubey@gmail.com | 
+01:53:47.839 | Info | 'Option : ' | Service: namandubey@gmail.com | 
+01:53:47.841 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:53:47.841 | Info | 'Error : ' | Service: Email does not exits | 
+01:54:27.041 | Info | 'Call Authenticate API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+01:54:27.042 | Info | 'Option : ' | Service: avneeshdwivedi.tft@gmail.com | 
+01:54:27.046 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:54:27.047 | Info | 'Error : ' | Service: Email does not exits | 
+03:46:52.659 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+03:46:52.660 | Info | 'Option : ' | Service: admin@imali.com | 
+03:46:52.851 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+03:46:52.852 | Info | 'Result : ' | Service: [object Object] | 
+03:55:20.040 | Info | 'Call RegisterUser API with an email : ' | Service: anonymoususer@gmail.com | 
+03:55:20.171 | Error | 'Error :error: duplicate key value violates unique constraint "account_pkey"' | Service: database | Method: RegisterUser | 
+03:56:49.326 | Info | 'Call RegisterUser API with an email : ' | Service: anonymoususer@gmail.com | 
+04:01:05.888 | Info | 'Call Authenticate API with an email : ' | Service: anonymoususer@gmail.com | 
+04:01:05.889 | Info | 'Option : ' | Service: anonymoususer@gmail.com | 
+04:01:05.895 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:01:05.895 | Info | 'Result : ' | Service: [object Object] | 
+04:04:08.588 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+04:04:08.589 | Info | 'Option : ' | Service: admin@imali.com | 
+04:04:08.592 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:04:08.593 | Info | 'Result : ' | Service: [object Object] | 
+04:04:28.933 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+04:04:28.934 | Info | 'Option : ' | Service: admin@imali.com | 
+04:04:28.937 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:04:28.937 | Info | 'Result : ' | Service: [object Object] | 
+04:05:00.312 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+04:05:00.313 | Info | 'Option : ' | Service: admin@imali.com | 
+04:05:00.320 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:05:00.321 | Info | 'Result : ' | Service: [object Object] | 
+04:10:39.072 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+04:10:39.073 | Info | 'Option : ' | Service: admin@imali.com | 
+04:10:39.079 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:10:39.079 | Info | 'Result : ' | Service: [object Object] | 
+04:17:24.273 | Info | 'Call RegisterUser API with an email : ' | 
+04:50:36.075 | Info | 'Call RegisterUser API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+04:50:36.233 | Error | 'Error :error: bind message supplies 8 parameters, but prepared statement "" requires 10' | Service: database | Method: RegisterUser | 
+04:54:59.301 | Info | 'Call RegisterUser API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+04:54:59.379 | Error | 'Error :error: invalid input syntax for type integer: "male"' | Service: database | Method: RegisterUser | 
+05:00:55.416 | Info | 'Call RegisterUser API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+05:01:40.802 | Info | 'Call Authenticate API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+05:01:40.803 | Info | 'Option : ' | Service: avneeshdwivedi.tft@gmail.com | 
+05:01:40.808 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:01:40.808 | Info | 'Result : ' | Service: [object Object] | 
+05:11:14.234 | Info | 'Call RegisterUser API with an email : ' | Service: namandubey@gmail.com | 
+05:12:41.660 | Info | 'Call RegisterUser API with an email : ' | Service: aunilsharma@gmail.com | 
+05:13:20.724 | Info | 'Call Authenticate API with an email : ' | Service: namandubey@gmail.com | 
+05:13:20.725 | Info | 'Option : ' | Service: namandubey@gmail.com | 
+05:13:20.731 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:13:20.732 | Info | 'Result : ' | Service: [object Object] | 
+05:15:36.924 | Info | 'Call Authenticate API with an email : ' | Service: lskdsjkdskfhsdj | 
+05:15:36.925 | Info | 'Option : ' | Service: lskdsjkdskfhsdj | 
+05:15:36.927 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:15:36.928 | Info | 'Error : ' | Service: Email does not exits | 
+05:16:12.626 | Info | 'Call Authenticate API with an email : ' | Service: sdfjsdklfjlsdjflkj | 
+05:16:12.629 | Info | 'Option : ' | Service: sdfjsdklfjlsdjflkj | 
+05:16:12.634 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:16:12.635 | Info | 'Error : ' | Service: Email does not exits | 
+05:19:57.825 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+05:19:57.826 | Info | 'Option : ' | Service: admin@imali.com | 
+05:19:57.833 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:19:57.834 | Info | 'Result : ' | Service: [object Object] | 
+05:27:54.584 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+05:27:54.585 | Info | 'Option : ' | Service: admin@imali.com | 
+05:27:54.590 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:27:54.591 | Info | 'Result : ' | Service: [object Object] | 
+05:33:46.355 | Info | 'Option : ' | Service: admin@imali.com | 
+05:33:46.355 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+05:33:46.359 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:33:46.360 | Info | 'Result : ' | Service: [object Object] | 
+05:34:24.522 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+05:34:24.523 | Info | 'Option : ' | Service: admin@imali.com | 
+05:34:24.526 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:34:24.526 | Info | 'Result : ' | Service: [object Object] | 
+05:47:41.509 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+05:47:41.511 | Info | 'Option : ' | Service: admin@imali.com | 
+05:47:41.525 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:47:41.526 | Info | 'Result : ' | Service: [object Object] | 
+05:55:33.348 | Info | 'Call RegisterUser API with an email : ' | Service: namandubey@gmail.com | 
+06:20:01.884 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+06:20:01.887 | Info | 'Option : ' | Service: admin@imali.com | 
+06:20:01.913 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+06:20:01.916 | Info | 'Result : ' | Service: [object Object] | 
+06:20:27.784 | Info | 'Call RegisterUser API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+06:39:12.822 | Info | 'Call RegisterUser API with an email : ' | Service: hdskfhfksdhfkhsdfhk@gmail.com | 

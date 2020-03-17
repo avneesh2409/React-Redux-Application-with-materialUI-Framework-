@@ -1,0 +1,34 @@
+00:56:43.166 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+00:56:43.168 | Info | 'Option : ' | Service: admin@imali.com | 
+00:56:43.272 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+00:56:43.272 | Info | 'Result : ' | Service: [object Object] | 
+03:27:09.799 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+03:27:09.800 | Info | 'Option : ' | Service: admin@imali.com | 
+03:27:09.937 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+03:27:09.939 | Info | 'Result : ' | Service: [object Object] | 
+04:04:11.343 | Info | 'Call RegisterUser API with an email : ' | Service: namandubey@gmail.com | 
+04:23:27.991 | Info | 'Call RegisterUser API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+04:31:30.793 | Info | 'Call RegisterUser API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+04:46:33.103 | Info | 'Call RegisterUser API with an email : ' | Service: namandubey@gmail.com | 
+04:46:33.172 | Info | 'Call RegisterUser API with an email : ' | Service: namandubey@gmail.com | 
+05:10:46.335 | Info | 'Call RegisterUser API with an email : ' | Service: andrew@gmail.com | 
+05:10:46.406 | Info | 'Call RegisterUser API with an email : ' | Service: andrew@gmail.com | 
+05:24:31.917 | Info | 'Call RegisterUser API with an email : ' | Service: gdjfjdsgfjdgsh@gmail.com | 
+05:24:31.989 | Info | 'Call RegisterUser API with an email : ' | Service: gdjfjdsgfjdgsh@gmail.com | 
+05:27:00.542 | Info | 'Call RegisterUser API with an email : ' | Service: ljdflkjsdjfdsjflksjdfjsdlk | 
+05:34:27.556 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+05:34:27.557 | Info | 'Option : ' | Service: admin@imali.com | 
+05:34:27.561 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:34:27.562 | Info | 'Result : ' | Service: [object Object] | 
+05:35:06.699 | Info | 'Call RegisterUser API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+05:38:11.965 | Error | 'Error :error: syntax error at or near "asc"' | Service: database | Method: MyProfile | 
+05:38:28.885 | Error | 'Error :error: syntax error at or near "orderby"' | Service: database | Method: MyProfile | 
+05:38:31.484 | Error | 'Error :error: syntax error at or near "orderby"' | Service: database | Method: MyProfile | 
+05:38:57.631 | Error | 'Error :error: syntax error at or near "ASC"' | Service: database | Method: MyProfile | 
+05:38:59.323 | Error | 'Error :error: syntax error at or near "ASC"' | Service: database | Method: MyProfile | 
+05:39:21.215 | Error | 'Error :error: syntax error at or near "ASC"' | Service: database | Method: MyProfile | 
+05:39:26.123 | Error | 'Error :error: syntax error at or near "ASC"' | Service: database | Method: MyProfile | 
+05:39:26.251 | Error | 'Error :error: syntax error at or near "ASC"' | Service: database | Method: MyProfile | 
+05:39:27.062 | Error | 'Error :error: syntax error at or near "ASC"' | Service: database | Method: MyProfile | 
+05:40:28.844 | Error | 'Error :error: syntax error at or near "ORDERBY"' | Service: database | Method: MyProfile | 
+05:42:21.218 | Info | 'Call RegisterUser API with an email : ' | Service: namandubey@gmail.com | 
