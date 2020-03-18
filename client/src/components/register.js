@@ -9,10 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { useSelector,useDispatch } from 'react-redux';
 import { FormControl, InputLabel, Select, MenuItem } from '@material-ui/core';
-// import { registerPost } from '../helpers/fetchApi';
 import { postImage } from '../action/postImage';
-// import { fetchStore } from '../helpers/fetchStore';
-// import { fetchUsers } from '../action/fetchUsers';
 import { postUsers } from '../action/postUsers';
 
 

@@ -1,7 +1,9 @@
-import React from 'react'
+import React  from 'react'
 import Grid from '@material-ui/core/Grid';
-// import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
+// import {useDispatch} from 'react-redux';
+// import { push } from 'react-router-redux';
+// import history from '../helpers/history'
 
 const useStyles = makeStyles(theme => ({
     image: {
@@ -17,6 +19,12 @@ const useStyles = makeStyles(theme => ({
   }));
 
 export default function LoginDependency() {
+
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   // dispatch(push('/login'));
+  //   history.push('/login');
+  // }, [])
     const classes = useStyles();
     return (
             <div>

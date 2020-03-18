@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Bar from "../components/Bar";
 import Foo from "../components/Foo";
 import { Router, Route } from 'react-router'
@@ -21,6 +21,9 @@ const Routers = () => {
         e.preventDefault();
         e.returnValue = '';
       });
+      useEffect(() => {
+         history.push('/register');
+      }, [])
     return (
         <div>
             <Dashboard />
