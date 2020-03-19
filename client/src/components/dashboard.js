@@ -109,7 +109,7 @@ function Dashboard() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   // const {token} = fetchStore()
-  let url = "http://localhost:8012/api/users/"+token.roleid;
+  let url = "http://localhost:8012/api/users/"+token.userid;
   dispatch(fetchUsers(url))
   dispatch(fetchRole())
   dispatch(fetchCountry())

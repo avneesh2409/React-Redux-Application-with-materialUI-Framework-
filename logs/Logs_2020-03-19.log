@@ -1,0 +1,4 @@
+04:00:00.162 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+04:00:00.163 | Info | 'Option : ' | Service: admin@imali.com | 
+04:00:00.261 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:00:00.263 | Info | 'Result : ' | Service: [object Object] | 

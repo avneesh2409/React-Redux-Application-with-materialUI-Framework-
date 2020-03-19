@@ -35,7 +35,7 @@ exports.SQL_QUERY = {
     Register_User_Insert: "INSERT INTO account(roleid,email, password,gender,country,name, address,contact, created_on, createdby, isactive,image) VALUES($1, $2, $3,$4,$5,$6,$7,$8,$9,$10,$11,$12) RETURNING email",
     Edit_Profile: "Update account Set email = $1, name = $2, address = $3, contact = $4 where userid = $5",
     MyProfile: "SELECT * FROM public.account where email = $1",
-    GetUsers: "Select userid,email,name,gender,role_name,country,created_on,image,createdby,isactive,address,contact from account join role on roleId=role_id where roleId > $1",
+    GetUsers: "Select userid,email,name,gender,role_name,country,created_on,image,createdby,isactive,address,contact from account join role on roleId=role_id where createdby = $1",
     GetAllUsers:"Select * from public.account where roleId > 1",
     GetRole : "Select * from role where role_id > $1",
     GetAdminRole: "Select * from role where role_id = 2",
