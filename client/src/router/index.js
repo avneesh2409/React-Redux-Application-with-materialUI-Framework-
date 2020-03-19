@@ -14,6 +14,7 @@ import User from '../components/User';
 import CurrentMonth from '../components/currentMonth';
 import YearSale from '../components/yearSale';
 import LastQuarter from '../components/lastQuarter';
+import { Registration, Users, Customers, Integrations, Reports,CurrentMonth as current,YearSale as year,LastQuater as last } from '../constants';
 
 
 const Routers = () => {
@@ -22,22 +23,20 @@ const Routers = () => {
         e.returnValue = '';
       });
       useEffect(() => {
-         history.push('/register');
+         history.push(`/${Registration}`);
       }, [])
     return (
         <div>
             <Dashboard />
             <Router history={history}>
-                <Route path='/register'  exact component={SignUp} />
-                <Route path='/customer' exact component={Customer} />
-                <Route path='/integration' exact component={Integration} />
-                <Route path='/report' exact component={Report} />
-                <Route path='/user' exact component={User} />
-                <Route path='/yearsale' exact component={YearSale} />
-                <Route path='/currentmonth' exact component={CurrentMonth} />
-                <Route path='/lastquarter' exact component={LastQuarter} />
-                <Route  path='/foo' exact component={() =>  <Foo />} />
-                <Route  path='/bar' exact component={() => <Bar  />} />
+                <Route path = {`/${Registration}`}  exact component={SignUp} />
+                <Route path={`/${Customers}`} exact component={Customer} />
+                <Route path={`/${Integrations}`} exact component={Integration} />
+                <Route path={`/${Reports}`} exact component={Report} />
+                <Route path={`/${Users}`} exact component={User} />
+                <Route path={`/${year}`} exact component={YearSale} />
+                <Route path={`/${current}`} exact component={CurrentMonth} />
+                <Route path={`/${last}`} exact component={LastQuarter} />
                 <Route path='*' component={PageNotfound} />
             </Router>
         </div>

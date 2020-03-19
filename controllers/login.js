@@ -79,7 +79,8 @@ module.exports.Controller = {
         });
     },
     GetRole: function (req, res) {
-        database.dbEngine.GetRole(function (status, message, data) {
+        let id = req.params.id;
+        database.dbEngine.GetRole(id,function (status, message, data) {
             helper.CreateResponse(status, message, data, function (response) {
                 res.send(response);
             });
@@ -102,7 +103,6 @@ module.exports.Controller = {
                 "image": req.body.image,
                 "createdby":req.body.createdby
             }
-            
             database.dbEngine.RegisterUser(users, function (status, message, data) {
                 helper.CreateResponse(status, message, data, function (response) {
                     res.send(response);

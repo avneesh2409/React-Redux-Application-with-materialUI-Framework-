@@ -13,6 +13,7 @@ import { Registration, Users, Customers, Integrations, Reports,CurrentMonth,Year
 import { useDispatch} from 'react-redux';
 import { push } from 'react-router-redux';
 import { storeTab } from '../../action/userAction'
+// import Report from '../Report';
 
 export const MainListItems = () => {
 const dispatch =  useDispatch();
@@ -22,23 +23,23 @@ const clickHandler = (data) =>{
   {
     case Registration:
       dispatch(storeTab(Registration))
-      dispatch(push('/register'))
+      dispatch(push('/'+Registration))
       break;
     case Users:
       dispatch(storeTab(Users))
-      dispatch(push('/user'))
+      dispatch(push('/'+Users))
       break;
     case Customers:
       dispatch(storeTab(Customers))
-      dispatch(push('/customer'))
+      dispatch(push('/'+Customers))
       break;
     case Integrations:
       dispatch(storeTab(Integrations))
-      dispatch(push('/integration'))
+      dispatch(push('/'+Integrations))
       break;
     case Reports:
       dispatch(storeTab(Reports))
-      dispatch(push('/report'))
+      dispatch(push('/'+Reports))
       break;
     default :
   }
@@ -86,15 +87,15 @@ const clickHandler = (data) =>{
   {
     case LastQuater:
       dispatch(storeTab(LastQuater))
-      dispatch(push('/lastquarter'))
+      dispatch(push('/'+LastQuater))
       break;
     case YearSale:
       dispatch(storeTab(YearSale))
-      dispatch(push('/yearsale'))
+      dispatch(push('/'+YearSale))
       break;
     case CurrentMonth:
       dispatch(storeTab(CurrentMonth))
-      dispatch(push('/currentmonth'))
+      dispatch(push('/'+CurrentMonth))
       break;
     default:
   }
@@ -106,19 +107,19 @@ const clickHandler = (data) =>{
         <ListItemIcon>
           <AssignmentIcon />
         </ListItemIcon>
-        <ListItemText primary="Current month" />
+        <ListItemText primary={CurrentMonth} />
       </ListItem>
       <ListItem button onClick={()=>clickHandler(LastQuater)}>
         <ListItemIcon>
           <AssignmentIcon />
         </ListItemIcon>
-        <ListItemText primary="Last quarter" />
+        <ListItemText primary={LastQuater} />
       </ListItem>
       <ListItem button onClick={()=>clickHandler(YearSale)}>
         <ListItemIcon>
           <AssignmentIcon />
         </ListItemIcon>
-        <ListItemText primary="Year-end sale" />
+        <ListItemText primary={YearSale} />
       </ListItem>
     </div>
   )

@@ -19,6 +19,8 @@ import { MainListItems, SecondaryListItems } from './childcomponents/listItems';
 import Logout from './logout';
 import { fetchStore } from '../helpers/fetchStore';
 import { fetchUsers } from '../action/fetchUsers';
+import {fetchRole} from '../action/fetchRole';
+import { fetchCountry } from '../action/fetchCountry';
 
 const drawerWidth = 240;
 
@@ -109,6 +111,8 @@ function Dashboard() {
   // const {token} = fetchStore()
   let url = "http://localhost:8012/api/users/"+token.roleid;
   dispatch(fetchUsers(url))
+  dispatch(fetchRole())
+  dispatch(fetchCountry())
   const handleDrawerOpen = () => {
     setOpen(true);
     dispatch(storeUserAction('240px'))
@@ -136,6 +140,7 @@ function Dashboard() {
               {title.payload}
           </Typography>
           {token.email}
+          <img src={token.image} height='30px' width='30px' style={{borderRadius:'50%',marginLeft:'10px',marginRight:'10px'}}/>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />

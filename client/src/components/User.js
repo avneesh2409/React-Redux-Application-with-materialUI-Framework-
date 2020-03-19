@@ -5,26 +5,18 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import { useSelector} from 'react-redux';
-// import { Avatar } from '@material-ui/core';
-// import { fetchStore } from '../helpers/fetchStore';
-// import { fetchUsers } from '../action/fetchUsers';
-// import { getDefaultLibFileName } from 'typescript';
-// import { getUsers } from '../helpers/fetchApi';
-// import { fetchStore} from '../helpers/fetchStore';
-// import { fetchUsers } from '../action/fetchUsers';
-// import { resolveTypeReferenceDirective } from 'typescript';
-// const getdata = (dispatch) => {
-
-// })
 
 
 export default function User() {
  let data = []
-// const dispatch = useDispatch();
-
   data = useSelector(state=> state.FetchUserReducer.data)
   const class1 = useSelector(state => state.userActionReducer)
-  // console.log("store data is here :-",data)
+let role = {
+  '1':'SuperAdmin',
+  '2':'VideoAdmin',
+  '3':'Publisher',
+  '4':'Advertiser'
+}
   return (
     <div style={class1}>
       {(data.status) ?
@@ -57,7 +49,7 @@ export default function User() {
               <TableCell><div>{row.role_name}</div></TableCell>
               <TableCell><div>{row.country}</div></TableCell>
               <TableCell><div>{row.created_on}</div></TableCell>
-              <TableCell><div>{row.createdby}</div></TableCell>
+              <TableCell><div>{role[`${row.createdby}`]}</div></TableCell>
               <TableCell><div>{row.address}</div></TableCell>
               <TableCell><div>{row.contact}</div></TableCell>
             </TableRow>

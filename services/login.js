@@ -58,11 +58,50 @@ exports.dbEngine = {
                 message = helper.MSG_LIST.SomethingWentWrong + ': ' + error
             } else {
                 status = true,
-                    message = helper.MSG_LIST.Profile_Updated
+                message = helper.MSG_LIST.Profile_Updated
             }
             callback(status, message, data);
         });
     },
+    GetRole:function(roleId,callback){
+        var status = false, message = '', data = {};
+
+        if(roleId == 1){
+            connection.query(helper.SQL_QUERY.GetAdminRole,[], function (error, results) {
+                if (error) {
+                    log.Error('Error :' + error, 'database', 'Imali');
+                    message = helper.MSG_LIST.SomethingWentWrong + ': ' + error
+                } else {
+                    if (results) {
+                        status = true;
+                        data = results.rows;
+                        message = "Success";
+                    }
+                    else {
+                        message = helper.MSG_LIST.Users_Not_Exist;
+                    }
+                }
+                callback(status, message, data);
+            });
+        }else{
+        connection.query(helper.SQL_QUERY.GetRole,[roleId], function (error, results) {
+            if (error) {
+                log.Error('Error :' + error, 'database', 'Imali');
+                message = helper.MSG_LIST.SomethingWentWrong + ': ' + error
+            } else {
+                if (results) {
+                    status = true;
+                    data = results.rows;
+                    message = "Success";
+                }
+                else {
+                    message = helper.MSG_LIST.Users_Not_Exist;
+                }
+            }
+            callback(status, message, data);
+        });
+    }
+},
     GetUsers:function (roleId,callback)
     {
         var status = false, message = '', data = {};
@@ -70,7 +109,7 @@ exports.dbEngine = {
         {
             connection.query(helper.SQL_QUERY.GetJoinTable,[], function (error, results) {
                 if (error) {
-                    log.Error('Error :' + error, 'database', 'MyProfile');
+                    log.Error('Error :' + error, 'database', 'Imali');
                     message = helper.MSG_LIST.SomethingWentWrong + ': ' + error
                 } else {
                     if (results.rows.length > 0) {
@@ -87,7 +126,7 @@ exports.dbEngine = {
         }else{
         connection.query(helper.SQL_QUERY.GetUsers, [roleId], function (error, results) {
             if (error) {
-                log.Error('Error :' + error, 'database', 'MyProfile');
+                log.Error('Error :' + error, 'database', 'Imali');
                 message = helper.MSG_LIST.SomethingWentWrong + ': ' + error
             } else {
                 if (results.rows.length > 0) {

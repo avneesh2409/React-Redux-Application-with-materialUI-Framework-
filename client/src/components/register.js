@@ -54,10 +54,11 @@ const initialState = {
 }
 let uploadImage = 'Upload Image';
 export default function SignUp(props) {
-  const dispatch = useDispatch()
-  const image = useSelector(state=>state.PostImageReducer);
+const dispatch = useDispatch()
+const image = useSelector(state=>state.PostImageReducer);
 const [state, setState] = useState(initialState)
 const classes = useStyles();
+
 
 const submitHandler = async (e) =>{
 e.preventDefault();
@@ -97,8 +98,9 @@ setState({
     [e.target.name]:e.target.value
 })
 }
-
-  const class1 = useSelector(state => state.userActionReducer)
+const role = useSelector(state=>state.FetchRoleReducer)
+const class1 = useSelector(state => state.userActionReducer)
+const country = useSelector(state => state.FetchCountryReducer)
   return (
     <div style={class1}>
       <Avatar className={classes.avatar}>
@@ -217,10 +219,14 @@ setState({
                         onChange={onChangeHandler}
                         className={classes.selectEmpty}
         >
-          <MenuItem value="India">India</MenuItem>
-          <MenuItem value="America">America</MenuItem>
-          <MenuItem value="Argentina">Argentina</MenuItem>
-          <MenuItem value="Israel">Israel</MenuItem>
+           {(!country.loading && country.data)?
+          country.data.map((e,i)=>{
+            return (
+            <MenuItem value={e.name} key={i}><img src={e.flag} height='10px' width='20px' style={{marginRight:'20px'}}/>{e.name}</MenuItem>
+            )
+          })
+            :null
+          }
         </Select>
       </FormControl>
           </Grid>
@@ -235,8 +241,14 @@ setState({
                         onChange={onChangeHandler}
                         className={classes.selectEmpty}
         >
-          <MenuItem value="3">Advertiser</MenuItem>
-          <MenuItem value="4">Publisher</MenuItem>
+          {(role.data && role.data.status)?
+          role.data.result.map((e,i)=>{
+            return (
+            <MenuItem value={e.role_id} key={i}>{e.role_name}</MenuItem>
+            )
+          })
+            :null
+          }
         </Select>
       </FormControl>
           </Grid>

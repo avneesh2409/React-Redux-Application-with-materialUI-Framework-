@@ -14,14 +14,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-app.get('/upload/:name',(req,res)=>{
-    console.log(req.params.name);
-    res.status(200).json({message:"successfully connected"})
-})
+// app.get('/upload/:name',(req,res)=>{
+//     console.log(req.params.name);
+//     res.status(200).json({message:"successfully connected"})
+// })
 app.use('/api', router);
 app.post('/token', login.Controller.Authenticate);
 router.post('/register',authenticate.authenticate, login.Controller.RegisterUser);
 router.get('/users/:id',authenticate.authenticate,login.Controller.GetUsers);
+router.get('/role/:id',authenticate.authenticate,login.Controller.GetRole);
 router.post('/fileupload',authenticate.authenticate,(req,res)=>{
     const form = new formidable.IncomingForm();
     form.parse(req,(err, fields, files) =>{
