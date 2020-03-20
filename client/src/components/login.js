@@ -7,9 +7,10 @@ import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import {useSelector} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
 import { Post } from '../helpers/fetchApi';
 import { setStore } from '../helpers/fetchStore';
+import { push } from 'react-router-redux';
 
 
 const useStyles = makeStyles(theme => ({
@@ -29,7 +30,7 @@ const useStyles = makeStyles(theme => ({
 
 export const  SignInSide = () =>{
   const classes = useStyles();
-
+const dispatch = useDispatch();
   const initialState = {
     email: "",
     password: ""
@@ -101,10 +102,10 @@ const loginstyle = useSelector(state=>state.loginStyleReducer)
               Sign In
             </Button>
             <Grid container>
-                <Link href="/forgetpassword">
+                <Link onClick={()=>dispatch(push('/forgetpassword'))} style={{cursor:'pointer'}}>
                   Forgot password?
                 </Link>
-                <Link href="/register" style={{marginLeft:'40%'}}>
+                <Link onClick={()=>dispatch(push('/register'))} style={{marginLeft:'40%',cursor:'pointer'}}>
                   {"Don't have an account? Sign Up"}
                 </Link>
             </Grid>

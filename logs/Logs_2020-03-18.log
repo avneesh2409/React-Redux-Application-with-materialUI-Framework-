@@ -1,0 +1,24 @@
+00:12:05.224 | Info | 'Call Authenticate API with an email : ' | Service: avneesh@gmail.com | 
+00:12:05.226 | Info | 'Option : ' | Service: avneesh@gmail.com | 
+00:12:05.231 | Info | 'Error : ' | Service: Email does not exits | 
+00:12:15.140 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+00:12:15.141 | Info | 'Option : ' | Service: admin@imali.com | 
+00:12:15.143 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+00:12:15.144 | Info | 'Result : ' | Service: [object Object] | 
+01:26:27.976 | Info | 'Call Authenticate API with an email : ' | Service: swatigupta@gmail.com | 
+01:26:27.979 | Info | 'Option : ' | Service: swatigupta@gmail.com | 
+01:26:27.985 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+01:26:27.986 | Info | 'Result : ' | Service: [object Object] | 
+01:49:09.384 | Error | 'Error :error: relation "account.role" does not exist' | Service: database | Method: MyProfile | 
+01:50:01.396 | Error | 'Error :error: bind message supplies 1 parameters, but prepared statement "" requires 0' | Service: database | Method: MyProfile | 
+01:56:53.693 | Error | 'Error :error: there is no parameter $1' | Service: database | Method: MyProfile | 
+03:30:44.351 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+03:30:44.355 | Info | 'Option : ' | Service: admin@imali.com | 
+03:30:44.392 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+03:30:44.392 | Info | 'Result : ' | Service: [object Object] | 
+03:42:12.265 | Info | 'Call RegisterUser API with an email : ' | Service: shruti@gmail.com | 
+04:59:15.425 | Info | 'Call Authenticate API with an email : ' | Service: shruti@gmail.com | 
+04:59:15.429 | Info | 'Option : ' | Service: shruti@gmail.com | 
+04:59:15.441 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+04:59:15.442 | Info | 'Result : ' | Service: [object Object] | 
+05:00:24.196 | Info | 'Call RegisterUser API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 

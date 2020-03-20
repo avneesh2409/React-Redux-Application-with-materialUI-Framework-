@@ -1,4 +1,4 @@
-import React  from 'react'
+import React, { useEffect }  from 'react'
 import { Router, Route} from 'react-router'
 import history from '../helpers/history'
 import SignInSide from '../components/login'
@@ -9,6 +9,9 @@ import LoginDependency from '../components/logindependency'
 // import {Redirect} from 'react-router-dom'
 
 export default function LoginRouter() {
+    useEffect(() => {
+        history.push(`/login`);
+     }, [])
     return (
         <div>
         <LoginDependency />

@@ -1,0 +1,44 @@
+02:15:10.578 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+02:15:10.583 | Info | 'Option : ' | Service: admin@imali.com | 
+02:15:10.598 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+02:15:10.599 | Info | 'Result : ' | Service: [object Object] | 
+03:12:54.367 | Info | 'Call RegisterUser API with an email : ' | Service: anujkumar@gmail.com | 
+03:14:42.634 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+03:14:42.635 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+03:14:42.639 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+03:14:42.639 | Info | 'Result : ' | Service: [object Object] | 
+03:16:01.728 | Info | 'Call RegisterUser API with an email : ' | Service: sumitra@gmail.com | 
+03:17:41.597 | Info | 'Call RegisterUser API with an email : ' | Service: andrew | 
+03:19:25.421 | Info | 'Call RegisterUser API with an email : ' | Service: gsdjfgdsjgfjsdg@gmail.com | 
+03:20:09.421 | Info | 'Call RegisterUser API with an email : ' | Service: jdklfjsdljflsj@gmail.com | 
+03:20:52.222 | Info | 'Call RegisterUser API with an email : ' | Service: dhfksdhkfhsdkfhdksfh@gmail.com | 
+03:22:16.159 | Info | 'Call RegisterUser API with an email : ' | Service: hfkhsdkfhksdhfsdj@gmail.com | 
+03:39:12.706 | Info | 'Call RegisterUser API with an email : ' | Service: hdfkjdsfdfks@gmail.com | 
+03:40:52.358 | Info | 'Call Authenticate API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+03:40:52.359 | Info | 'Option : ' | Service: avneeshdwivedi.tft@gmail.com | 
+03:40:52.361 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+03:40:52.362 | Info | 'Result : ' | Service: [object Object] | 
+03:55:48.914 | Info | 'Call RegisterUser API with an email : ' | Service: kdhfkdkjg#@gmail.com | 
+05:13:49.672 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+05:13:49.676 | Info | 'Option : ' | Service: admin@imali.com | 
+05:13:49.684 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:13:49.686 | Info | 'Result : ' | Service: [object Object] | 
+05:32:49.943 | Info | 'Call Authenticate API with an email : ' | Service: shruti@gmail.com | 
+05:32:49.944 | Info | 'Option : ' | Service: shruti@gmail.com | 
+05:32:49.950 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:32:49.950 | Info | 'Error : ' | Service: Email does not exits | 
+05:32:57.763 | Info | 'Call Authenticate API with an email : ' | Service: shruti@gmail.com | 
+05:32:57.763 | Info | 'Option : ' | Service: shruti@gmail.com | 
+05:32:57.766 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+05:32:57.767 | Info | 'Error : ' | Service: Email does not exits | 
+05:33:07.304 | Info | 'Call Authenticate API with an email : ' | Service: nayeem@gmail.com | 
+05:33:07.305 | Info | 'Option : ' | Service: nayeem@gmail.com | 
+05:33:07.310 | Info | 'Result : ' | Service: [object Object] | 
+05:33:07.309 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+08:35:41.140 | Info | 'Call Authenticate API with an email : ' | Service: avneesh@gmail.com | 
+08:35:41.144 | Info | 'Option : ' | Service: avneesh@gmail.com | 
+08:35:41.157 | Info | 'Error : ' | Service: Email does not exits | 
+08:35:55.138 | Info | 'Option : ' | Service: avneeshdwivedi.tft@gmail.com | 
+08:35:55.137 | Info | 'Call Authenticate API with an email : ' | Service: avneeshdwivedi.tft@gmail.com | 
+08:35:55.142 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+08:35:55.143 | Info | 'Result : ' | Service: [object Object] | 

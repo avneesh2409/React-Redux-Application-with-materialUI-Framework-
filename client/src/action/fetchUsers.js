@@ -1,10 +1,11 @@
 // import React from "react";
 import { FETCH_USER_REQUEST, FETCH_USER_SUCCESS, FETCH_USER_FAILURE } from "../constants";
-import { getToken } from "../helpers/fetchStore";
+import { getToken, fetchStore } from "../helpers/fetchStore";
 
 const t = getToken();
-export const fetchUsers = (url) =>{
-    // url = 'https://jsonplaceholder.typicode.com/todos/1'
+const {token} = fetchStore();
+export const fetchUsers = () =>{
+    let url = "http://localhost:8012/api/users/"+token.userid;
     const options = {
         method: 'GET',
         headers: {

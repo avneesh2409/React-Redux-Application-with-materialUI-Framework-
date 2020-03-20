@@ -16,7 +16,7 @@ import { postUsers } from '../action/postUsers';
 
 const useStyles = makeStyles(theme => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(2),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -27,15 +27,15 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(3),
+    marginTop: theme.spacing(2),
+    maxHeight:'300px',
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
   formControl: {
-    width:'100%',
-    marginTop: theme.spacing(3),
+    width:'50%',
+    marginTop: theme.spacing(2),
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
@@ -101,6 +101,7 @@ setState({
 const role = useSelector(state=>state.FetchRoleReducer)
 const class1 = useSelector(state => state.userActionReducer)
 const country = useSelector(state => state.FetchCountryReducer)
+const toggle = useSelector(state=>state.ToggleButtonReducer);
   return (
     <div style={class1}>
       <Avatar className={classes.avatar}>
@@ -111,7 +112,8 @@ const country = useSelector(state => state.FetchCountryReducer)
         </Typography>
         <form className={classes.form} onSubmit={submitHandler}>
           <Grid container spacing={2}>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={12}>
+            <FormControl variant='outlined' className={classes.formControl}>
               <TextField
                 autoComplete="fname"
                 name="first"
@@ -124,9 +126,8 @@ const country = useSelector(state => state.FetchCountryReducer)
                 autoFocus
                 onChange = {onChangeHandler}
               />
-            </Grid>
-            <Grid item xs={12} sm={6}>
               <TextField
+              style={{marginTop:'30px'}}
                 variant="outlined"
                 value= {state.last}
                 required
@@ -137,8 +138,10 @@ const country = useSelector(state => state.FetchCountryReducer)
                 autoComplete="lname"
                 onChange = {onChangeHandler}
               />
+              </FormControl>
             </Grid>
             <Grid item xs={12}>
+            <FormControl variant='outlined' className={classes.formControl}>
               <TextField
                 variant="outlined"
                 required
@@ -150,8 +153,10 @@ const country = useSelector(state => state.FetchCountryReducer)
                 autoComplete="email"
                 onChange = {onChangeHandler}
               />
+              </FormControl>
             </Grid>
             <Grid item xs={12}>
+            <FormControl variant='outlined' className={classes.formControl}>
               <TextField
                 variant="outlined"
                 required
@@ -164,8 +169,10 @@ const country = useSelector(state => state.FetchCountryReducer)
                 autoComplete="current-password"
                 onChange = {onChangeHandler}
               />
+              </FormControl>
             </Grid>
             <Grid item xs={12} sm={12}>
+            <FormControl variant='outlined' className={classes.formControl}>
               <TextField
                 value= {state.address}
                 variant="outlined"
@@ -176,8 +183,10 @@ const country = useSelector(state => state.FetchCountryReducer)
                 name="address"
                 onChange = {onChangeHandler}
               />
+              </FormControl>
             </Grid>
           <Grid item sm={12}>
+          <FormControl variant='outlined' className={classes.formControl}>
             <div style={{position:'relative',right:'0px',border:'1px solid #b3b3b3',padding:'8px',borderRadius:'5px'}}>
               <span>Gender </span>
               <span style={{marginLeft:'25%'}}> Male <Radio
@@ -194,8 +203,10 @@ const country = useSelector(state => state.FetchCountryReducer)
               />
               </span>
               </div>
+              </FormControl>
           </Grid>
           <Grid item xs={12} sm={12}>
+          <FormControl variant='outlined' className={classes.formControl}>
               <TextField
                 variant="outlined"
                 value= {state.contact}
@@ -206,6 +217,7 @@ const country = useSelector(state => state.FetchCountryReducer)
                 name="contact"
                 onChange = {onChangeHandler}
               />
+              </FormControl>
             </Grid>
           </Grid>
           <Grid item xs={12}>
@@ -222,7 +234,7 @@ const country = useSelector(state => state.FetchCountryReducer)
            {(!country.loading && country.data)?
           country.data.map((e,i)=>{
             return (
-            <MenuItem value={e.name} key={i}><img src={e.flag} height='10px' width='20px' style={{marginRight:'20px'}}/>{e.name}</MenuItem>
+            <MenuItem value={e.name} key={i}><img src={e.flag} alt='N' height='10px' width='20px' style={{marginRight:'20px'}}/>{e.name}</MenuItem>
             )
           })
             :null
@@ -268,6 +280,7 @@ const country = useSelector(state => state.FetchCountryReducer)
           </Button>
           </FormControl>
           </Grid>
+          <FormControl variant='outlined' className={classes.formControl}>
           <Button
             type="submit"
             fullWidth
@@ -275,8 +288,9 @@ const country = useSelector(state => state.FetchCountryReducer)
             color="primary"
             className={classes.submit}
           >
-            Sign Up
+           { (toggle.status)?toggle.value:"Sign Up"}
           </Button>
+        </FormControl>
         </form>
       </div>
   )

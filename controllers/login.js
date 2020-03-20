@@ -3,7 +3,7 @@ var url = require('url');
 var helper = require('../helpers/helper');
 var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
-var fs = require('fs');
+// var fs = require('fs');
 const log = require('node-file-logger');
 const options = {
     timeZone: 'Israel Standard Time',
@@ -71,7 +71,7 @@ module.exports.Controller = {
         });
     },
     GetUsers:function(req,res){
-        var id = req.params.id;
+        var id = req.decoded.userid;
         database.dbEngine.GetUsers(id,(status,message,data)=>{
         helper.CreateResponse(status, message, data, function (response) {
                 res.send(response);
@@ -86,7 +86,14 @@ module.exports.Controller = {
             });
         });
     },
-    //Users Api's
+    GetAdmin: function (req, res) {
+        database.dbEngine.GetAdmin(function (status, message, data) {
+            helper.CreateResponse(status, message, data, function (response) {
+                res.send(response);
+            });
+        });
+    },
+
     RegisterUser: function (req, res) {
 
         log.Info('Call RegisterUser API with an email : ', req.body.email);
@@ -118,7 +125,16 @@ module.exports.Controller = {
             })
         }
     },
-
+    DeleteUser:function(req,res){
+            // console.log(req.params.id);
+            let id = req.params.id;
+            // console.log(req.decoded.roleid);
+           database.dbEngine.DeleteUser(id, function (status, message, data) {
+                            helper.CreateResponse(status, message, data, function (response) {
+                                res.send(response);
+                            });
+                        });
+         },
     EditProfile: function (req, res) {
 
         if (req.body.userid && req.body.name) {

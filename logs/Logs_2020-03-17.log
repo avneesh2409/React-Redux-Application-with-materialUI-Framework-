@@ -32,3 +32,12 @@
 05:39:27.062 | Error | 'Error :error: syntax error at or near "ASC"' | Service: database | Method: MyProfile | 
 05:40:28.844 | Error | 'Error :error: syntax error at or near "ORDERBY"' | Service: database | Method: MyProfile | 
 05:42:21.218 | Info | 'Call RegisterUser API with an email : ' | Service: namandubey@gmail.com | 
+21:56:19.637 | Info | 'Call RegisterUser API with an email : ' | Service: swatigupta@gmail.com | 
+22:01:53.402 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+22:01:53.403 | Info | 'Option : ' | Service: admin@imali.com | 
+22:01:53.406 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+22:01:53.407 | Info | 'Result : ' | Service: [object Object] | 
+22:49:43.903 | Info | 'Call Authenticate API with an email : ' | Service: admin@imali.com | 
+22:49:43.904 | Info | 'Option : ' | Service: admin@imali.com | 
+22:49:44.019 | Error | 'Error :null' | Service: database | Method: Authenticate | 
+22:49:44.021 | Info | 'Result : ' | Service: [object Object] | 

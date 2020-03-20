@@ -249,6 +249,7 @@ import { useSelector,useDispatch } from 'react-redux';
 import { FormControl, InputLabel, Select, MenuItem, Link } from '@material-ui/core';
 import { postImage } from '../action/postImage';
 import { postUsers } from '../action/postUsers';
+import { push } from 'react-router-redux';
 
 
 
@@ -506,7 +507,7 @@ setState({
           </Button>
         <Grid container justify="flex-end">
         <Grid item>
-              <Link href="/login" variant="body2">
+              <Link onClick={()=>dispatch(push('/login'))} variant="body2" style={{cursor:'pointer'}}>
                Already have an account? Sign in
               </Link>
         </Grid>

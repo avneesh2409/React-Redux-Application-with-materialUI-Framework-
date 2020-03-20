@@ -1,6 +1,11 @@
 export function fetchStore() {
+    let token = null;
     const store = JSON.parse(localStorage.getItem('token'));
-    const token = parseJwt(store.data);
+    if(store){
+        if(store.data){
+            token = parseJwt(store.data);
+        }
+    }
     return {token};
 }
 export function getToken(){

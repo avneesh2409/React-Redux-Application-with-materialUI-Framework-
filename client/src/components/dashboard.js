@@ -21,6 +21,8 @@ import { fetchStore } from '../helpers/fetchStore';
 import { fetchUsers } from '../action/fetchUsers';
 import {fetchRole} from '../action/fetchRole';
 import { fetchCountry } from '../action/fetchCountry';
+import { fetchCreation } from '../action/fetchCreation';
+// import { push } from 'react-router-redux';
 
 const drawerWidth = 240;
 
@@ -107,10 +109,17 @@ function Dashboard() {
   const dispatch = useDispatch()
   const {token} = fetchStore();
   const classes = useStyles();
+  const role = {
+    "1":"Admin",
+    "2":"VedioAdmin",
+    "3":"Advertiser",
+    "4":"Publisher"
+  }
   const [open, setOpen] = React.useState(true);
   // const {token} = fetchStore()
-  let url = "http://localhost:8012/api/users/"+token.userid;
-  dispatch(fetchUsers(url))
+
+  dispatch(fetchUsers())
+  dispatch(fetchCreation())
   dispatch(fetchRole())
   dispatch(fetchCountry())
   const handleDrawerOpen = () => {
@@ -139,8 +148,10 @@ function Dashboard() {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
               {title.payload}
           </Typography>
+        
           {token.email}
-          <img src={token.image} height='30px' width='30px' style={{borderRadius:'50%',marginLeft:'10px',marginRight:'10px'}}/>
+          <span style={{color:'yellow'}}>[{role[`${token.roleid}`]}]</span>
+          <img src={token.image} alt='N' height='30px' width='30px' style={{borderRadius:'50%',marginLeft:'10px',marginRight:'10px'}}/>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />

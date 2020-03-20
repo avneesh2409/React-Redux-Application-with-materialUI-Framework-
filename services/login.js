@@ -63,6 +63,24 @@ exports.dbEngine = {
             callback(status, message, data);
         });
     },
+    GetAdmin:function(callback){
+        connection.query(helper.SQL_QUERY.GetAllAdmin,[], function (error, results) {
+            if (error) {
+                log.Error('Error :' + error, 'database', 'Imali');
+                message = helper.MSG_LIST.SomethingWentWrong + ': ' + error
+            } else {
+                if (results) {
+                    status = true;
+                    data = results.rows;
+                    message = "Success";
+                }
+                else {
+                    message = helper.MSG_LIST.Users_Not_Exist;
+                }
+            }
+            callback(status, message, data);
+        });
+    },
     GetRole:function(roleId,callback){
         var status = false, message = '', data = {};
 
@@ -187,11 +205,18 @@ exports.dbEngine = {
         });
     },
 
-
+    DeleteUser:function(id,callback){
+        var status = false, message = '', data = {};
+        connection.query(helper.SQL_QUERY.Delete_Users,[id], function (xreq, xres) {
+            message = "Record successfully deleted";
+            status = true;
+            callback(status, message,data);
+        });
+    },
     CheckEmailExist_Profile: function (users, callback) {
         var status = false, message = '', data = {};
         connection.query(helper.SQL_QUERY.Edit_exit_email_profile, [users.email, users.userid], function (xreq, xres) {
-            //console.log(xres.rows[0].exists);
+           
             if (xres.rows[0].exists) {
                 message = 'email id already exist.';
             }

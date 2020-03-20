@@ -35,15 +35,16 @@ exports.SQL_QUERY = {
     Register_User_Insert: "INSERT INTO account(roleid,email, password,gender,country,name, address,contact, created_on, createdby, isactive,image) VALUES($1, $2, $3,$4,$5,$6,$7,$8,$9,$10,$11,$12) RETURNING email",
     Edit_Profile: "Update account Set email = $1, name = $2, address = $3, contact = $4 where userid = $5",
     MyProfile: "SELECT * FROM public.account where email = $1",
-    GetUsers: "Select userid,email,name,gender,role_name,country,created_on,image,createdby,isactive,address,contact from account join role on roleId=role_id where createdby = $1",
-    GetAllUsers:"Select * from public.account where roleId > 1",
+    GetUsers: "Select userid,email,name,gender,role_name,country,created_on,image,createdby,isactive,address,contact from account join role on roleId=role_id where createdby = $1 LIMIT 10",
     GetRole : "Select * from role where role_id > $1",
     GetAdminRole: "Select * from role where role_id = 2",
-    GetJoinTable:"Select userid,email,name,gender,role_name,country,image,created_on,createdby,isactive,address,contact from account join role on account.roleId=role.role_id where account.roleId > 1 ",
+    GetJoinTable:"Select userid,email,name,gender,role_name,country,image,created_on,createdby,isactive,address,contact from account join role on account.roleId=role.role_id where account.roleId > 1 LIMIT 10",
     Forgot_Password: "SELECT * FROM public.account where email = $1",
     Edit_profile_check_RoleID: "SELECT * FROM account where userid = $1",
     Edit_exit_email_profile: "SELECT exists(select 1 from account where email = $1 And userid !=$2)",
     Tracking_Detail_Data: "select * from Tracking_Detail_To_S3()",
+    Delete_Users:"delete from account where userid = $1",
+    GetAllAdmin:"select b.userid as date,b.name as name from account a,account b where a.userid = b.createdby and a.roleid < 2"
 }
 
 exports.ResponseObject = {

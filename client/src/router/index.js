@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import Bar from "../components/Bar";
-import Foo from "../components/Foo";
+// import Bar from "../components/Bar";
+// import Foo from "../components/Foo";
 import { Router, Route } from 'react-router'
 import history from '../helpers/history'
 import Dashboard from '../components/dashboard';
@@ -14,6 +14,7 @@ import User from '../components/User';
 import CurrentMonth from '../components/currentMonth';
 import YearSale from '../components/yearSale';
 import LastQuarter from '../components/lastQuarter';
+import Test from '../components/Test';
 import { Registration, Users, Customers, Integrations, Reports,CurrentMonth as current,YearSale as year,LastQuater as last } from '../constants';
 
 
@@ -29,11 +30,12 @@ const Routers = () => {
         <div>
             <Dashboard />
             <Router history={history}>
+                <Route path='/test' exact component={User} />
                 <Route path = {`/${Registration}`}  exact component={SignUp} />
                 <Route path={`/${Customers}`} exact component={Customer} />
                 <Route path={`/${Integrations}`} exact component={Integration} />
                 <Route path={`/${Reports}`} exact component={Report} />
-                <Route path={`/${Users}`} exact component={User} />
+                <Route path={`/${Users}`} exact component={Test} />
                 <Route path={`/${year}`} exact component={YearSale} />
                 <Route path={`/${current}`} exact component={CurrentMonth} />
                 <Route path={`/${last}`} exact component={LastQuarter} />

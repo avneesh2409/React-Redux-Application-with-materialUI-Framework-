@@ -4,7 +4,7 @@ import { getToken, fetchStore } from "../helpers/fetchStore";
 const t = getToken();
 export const postUsers = (url,payload) =>{
     let {token} = fetchStore();
-    payload.createdby = `${token.roleid}`;
+    payload.createdby = `${token.userid}`;
     const options = {
         method: 'POST',
         headers: {
