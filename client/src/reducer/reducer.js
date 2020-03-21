@@ -9,12 +9,16 @@ import FetchCountryReducer from './FetchCountry';
 import FetchCreationReducer from './FetchCreation';
 import FetchDeleteReducer from './DeleteUser';
 import ToggleButtonReducer from './ToggleButton';
+import FetchSingleUserReducer from './FetchSingleUser';
+import UpdateUserReducer from './UpdateUser';
 import { routerReducer } from 'react-router-redux';
 
 const rootReducer = combineReducers({
     userReducer,
     userActionReducer,
     loginStyleReducer,
+    UpdateUserReducer,
+    FetchSingleUserReducer,
     ToggleButtonReducer,
     FetchDeleteReducer,
     FetchUserReducer,

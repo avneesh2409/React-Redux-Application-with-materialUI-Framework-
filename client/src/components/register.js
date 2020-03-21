@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -11,6 +11,7 @@ import { useSelector,useDispatch } from 'react-redux';
 import { FormControl, InputLabel, Select, MenuItem } from '@material-ui/core';
 import { postImage } from '../action/postImage';
 import { postUsers } from '../action/postUsers';
+import { ToggleButton } from '../action/toggleButton';
 
 
 
@@ -60,7 +61,7 @@ const [state, setState] = useState(initialState)
 const classes = useStyles();
 
 
-const submitHandler = async (e) =>{
+const submitHandler = (e) =>{
 e.preventDefault();
 const url =  "http://localhost:8012/api/register";
 const cred = {
@@ -77,8 +78,14 @@ const cred = {
 dispatch(postUsers(url,cred))
 setState(initialState)
 uploadImage = 'Upload Image'
+console.log(e)
 }
-
+const updateHandler = (e) =>{
+  e.preventDefault();
+  console.log("we got the request from update handler:-",state);
+  setState(initialState)
+  dispatch(ToggleButton(false,"Sign Up"));
+}
 const onChangeHandler = async (e) =>{
   if(e.target.name === 'image')
   {
@@ -102,15 +109,30 @@ const role = useSelector(state=>state.FetchRoleReducer)
 const class1 = useSelector(state => state.userActionReducer)
 const country = useSelector(state => state.FetchCountryReducer)
 const toggle = useSelector(state=>state.ToggleButtonReducer);
+const editData = useSelector(state => state.FetchSingleUserReducer)
+useEffect(() => {
+  if(editData.data.result){
+    let y = {
+      ...state,
+      first:editData.data.result[0].name.split(' ')[0],
+      last:(editData.data.result[0].name.split(' ')[1])?editData.data.result[0].name.split(' ')[1]:'',
+      email:editData.data.result[0].email,
+      gender:editData.data.result[0].gender,
+      address:editData.data.result[0].address,
+      contact:editData.data.result[0].contact
+    }
+    setState(y)
+  }
+}, [editData.data])
   return (
     <div style={class1}>
       <Avatar className={classes.avatar}>
             <LockOutlinedIcon />
       </Avatar>
         <Typography component="h1" variant="h5">
-          Sign up
+         {toggle.value} 
         </Typography>
-        <form className={classes.form} onSubmit={submitHandler}>
+        <form className={classes.form} onSubmit={(toggle.status)?updateHandler:submitHandler}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={12}>
             <FormControl variant='outlined' className={classes.formControl}>
@@ -125,6 +147,7 @@ const toggle = useSelector(state=>state.ToggleButtonReducer);
                 label="First Name"
                 autoFocus
                 onChange = {onChangeHandler}
+              disabled = {(toggle.status)?true:false}
               />
               <TextField
               style={{marginTop:'30px'}}
@@ -137,6 +160,7 @@ const toggle = useSelector(state=>state.ToggleButtonReducer);
                 name="last"
                 autoComplete="lname"
                 onChange = {onChangeHandler}
+                disabled = {(toggle.status)?true:false}
               />
               </FormControl>
             </Grid>
@@ -152,6 +176,7 @@ const toggle = useSelector(state=>state.ToggleButtonReducer);
                 name="email"
                 autoComplete="email"
                 onChange = {onChangeHandler}
+                disabled = {(toggle.status)?true:false}
               />
               </FormControl>
             </Grid>
@@ -168,6 +193,7 @@ const toggle = useSelector(state=>state.ToggleButtonReducer);
                 id="password"
                 autoComplete="current-password"
                 onChange = {onChangeHandler}
+                disabled = {(toggle.status)?true:false}
               />
               </FormControl>
             </Grid>
@@ -230,6 +256,7 @@ const toggle = useSelector(state=>state.ToggleButtonReducer);
                         name="country"
                         onChange={onChangeHandler}
                         className={classes.selectEmpty}
+                        disabled = {(toggle.status)?true:false}
         >
            {(!country.loading && country.data)?
           country.data.map((e,i)=>{
@@ -252,6 +279,7 @@ const toggle = useSelector(state=>state.ToggleButtonReducer);
                         name="role"
                         onChange={onChangeHandler}
                         className={classes.selectEmpty}
+                        disabled = {(toggle.status)?true:false}
         >
           {(role.data && role.data.status)?
           role.data.result.map((e,i)=>{
@@ -276,6 +304,7 @@ const toggle = useSelector(state=>state.ToggleButtonReducer);
             onChange = {onChangeHandler}
             name="image"
             style={{ display: "none" }}
+            disabled = {(toggle.status)?true:false}
           />
           </Button>
           </FormControl>
@@ -288,7 +317,7 @@ const toggle = useSelector(state=>state.ToggleButtonReducer);
             color="primary"
             className={classes.submit}
           >
-           { (toggle.status)?toggle.value:"Sign Up"}
+           {toggle.value}
           </Button>
         </FormControl>
         </form>

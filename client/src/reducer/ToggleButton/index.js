@@ -1,6 +1,6 @@
 import {TOGGLE_BUTTON} from '../../constants';
 
-const ToggleButtonReducer = (state={},action) =>{
+const ToggleButtonReducer = (state={status:false,value:"Sign Up"},action) =>{
     switch(action.type)
     {
         case TOGGLE_BUTTON:
