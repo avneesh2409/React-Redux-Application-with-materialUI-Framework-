@@ -204,7 +204,34 @@ exports.dbEngine = {
             callback(status, message, data);
         });
     },
-
+    UpdateUser:function(user,callback){
+        var status = false,message = '',data = {};
+        connection.query(helper.SQL_QUERY.UpdateUser,[user.address,user.contact,user.gender,user.userid],(xreq,xres)=>{
+            if(xres.rowCount > 0){
+                message = "updated";
+                status  = true;
+            }
+            else{
+                message = "record not found for userid = "+user.userid;
+            }
+        callback(status,message,data);
+        })
+    },
+GetSingleUser:function(id,callback){
+    var status = false,message='',data={};
+    connection.query(helper.SQL_QUERY.GetSingleUser,[id], function (xreq, xres) {
+        if(xres.rowCount > 0){
+            message = "Success";
+            status = true;
+            data = xres.rows;
+        }
+        else{
+            message = "No User Found for id = "+id;
+        }
+        
+        callback(status, message,data);
+    });
+},
     DeleteUser:function(id,callback){
         var status = false, message = '', data = {};
         connection.query(helper.SQL_QUERY.Delete_Users,[id], function (xreq, xres) {
@@ -215,8 +242,7 @@ exports.dbEngine = {
     },
     CheckEmailExist_Profile: function (users, callback) {
         var status = false, message = '', data = {};
-        connection.query(helper.SQL_QUERY.Edit_exit_email_profile, [users.email, users.userid], function (xreq, xres) {
-           
+    connection.query(helper.SQL_QUERY.Edit_exit_email_profile, [users.email, users.userid], function (xreq, xres) {
             if (xres.rows[0].exists) {
                 message = 'email id already exist.';
             }

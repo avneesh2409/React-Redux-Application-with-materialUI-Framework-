@@ -12,6 +12,7 @@ import { FormControl, InputLabel, Select, MenuItem } from '@material-ui/core';
 import { postImage } from '../action/postImage';
 import { postUsers } from '../action/postUsers';
 import { ToggleButton } from '../action/toggleButton';
+import { UpdateUser } from '../action/updateUser';
 
 
 
@@ -83,6 +84,13 @@ console.log(e)
 const updateHandler = (e) =>{
   e.preventDefault();
   console.log("we got the request from update handler:-",state);
+  let payload = {
+    userid:state.userid,
+    address:state.address,
+    contact:state.contact,
+    gender:state.gender
+  }
+  dispatch(UpdateUser(payload));
   setState(initialState)
   dispatch(ToggleButton(false,"Sign Up"));
 }
@@ -114,6 +122,7 @@ useEffect(() => {
   if(editData.data.result){
     let y = {
       ...state,
+      userid:editData.data.result[0].userid,
       first:editData.data.result[0].name.split(' ')[0],
       last:(editData.data.result[0].name.split(' ')[1])?editData.data.result[0].name.split(' ')[1]:'',
       email:editData.data.result[0].email,

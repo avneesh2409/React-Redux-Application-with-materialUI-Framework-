@@ -23,6 +23,7 @@ import { Registration } from '../constants';
 import { push } from 'react-router-redux';
 import { Button } from '@material-ui/core';
 import { ToggleButton } from '../action/toggleButton';
+import { fetchSingleUser } from '../action/fetchSingleUser';
 
 
 function descendingComparator(a, b, orderBy) {
@@ -147,9 +148,8 @@ for(let i = 0;i < x.length;i++)
    {
       let url = "http://localhost:8012/api/delete/"+x[i];
       dispatch(deleteUser(url));
+      dispatch(push('/'+Registration));
    }
-   alert("successfully deleted");
-   window.location.reload();
     }
   return (
     <Toolbar
@@ -281,8 +281,7 @@ export default function EnhancedTable() {
 
   const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 const editClickHandler = (e) =>{
-// console.log("click handler :-",e);
-console.log("my element :-",document.getElementById(`${e}`));
+dispatch(fetchSingleUser(document.getElementById(`${e}`).id))
  dispatch(ToggleButton(true,"Update User"));
  dispatch(push('/'+Registration));
 }

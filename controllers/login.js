@@ -125,6 +125,35 @@ module.exports.Controller = {
             })
         }
     },
+    UpdateUser:function(req,res){
+        let user = {
+            userid:req.body.userid,
+            address:req.body.address,
+            contact:req.body.contact,
+            gender:req.body.gender
+        }
+        if(!user.userid){
+            let status = false,message = helper.MSG_LIST.USER_ID_REQUIRED,data={}
+            helper.CreateResponse(status,message,data,function(response){
+                res.send(response);
+            });
+        }
+        else{
+            database.dbEngine.UpdateUser(user,function(status,message,data){
+                helper.CreateResponse(status,message,data,function(response){
+                    res.send(response);
+                })
+            })
+        }
+    },
+    GetSingleUser:function(req,res){
+        let id = parseInt(req.params.id);
+        database.dbEngine.GetSingleUser(id,function(status,message,data){
+                helper.CreateResponse(status,message,data,function(response){
+                    res.send(response);
+                })
+        })
+    },
     DeleteUser:function(req,res){
             // console.log(req.params.id);
             let id = req.params.id;

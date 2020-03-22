@@ -23,6 +23,10 @@ app.post('/token', login.Controller.Authenticate);
 router.post('/register',authenticate.authenticate, login.Controller.RegisterUser);
 router.get('/users/:id',authenticate.authenticate,login.Controller.GetUsers);
 router.get('/role/:id',authenticate.authenticate,login.Controller.GetRole);
+router.get('/admin',authenticate.authenticate,login.Controller.GetAdmin);
+router.delete('/delete/:id',authenticate.authenticate,login.Controller.DeleteUser);
+router.get('/singleuser/:id',authenticate.authenticate,login.Controller.GetSingleUser);
+router.patch('/update',authenticate.authenticate,login.Controller.UpdateUser);
 router.post('/fileupload',authenticate.authenticate,(req,res)=>{
     const form = new formidable.IncomingForm();
     form.parse(req,(err, fields, files) =>{

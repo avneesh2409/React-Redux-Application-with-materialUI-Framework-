@@ -14,6 +14,7 @@ exports.MSG_LIST = {
     Email_Not_Match: "Email or password incorrect",
     Email_Not_Exist: "Email does not exits",
     Users_Not_Exist:"users not exists",
+    USER_ID_REQUIRED:"User Id is required",
     Error_Query: "there are some error with query",
     EditVast_NotVideoAdmin: "This Vast id not related to you",
     CreateVast_CheckVideoAdmin: "Only super admin and video admin can submit the Advertisement",
@@ -44,6 +45,8 @@ exports.SQL_QUERY = {
     Edit_exit_email_profile: "SELECT exists(select 1 from account where email = $1 And userid !=$2)",
     Tracking_Detail_Data: "select * from Tracking_Detail_To_S3()",
     Delete_Users:"delete from account where userid = $1",
+    UpdateUser:"update account set address = $1,contact = $2,gender = $3 where userid = $4",
+    GetSingleUser:"select userid,email,name,gender,country,image,created_on,createdby,isactive,address,contact from account where userid = $1",
     GetAllAdmin:"select b.userid as date,b.name as name from account a,account b where a.userid = b.createdby and a.roleid < 2"
 }
 
