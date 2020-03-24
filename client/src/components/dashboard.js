@@ -148,7 +148,6 @@ function Dashboard() {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
               {title.payload}
           </Typography>
-        
           {token.email}
           <span style={{color:'yellow'}}>[{role[`${token.roleid}`]}]</span>
           <img src={token.image} alt='N' height='30px' width='30px' style={{borderRadius:'50%',marginLeft:'10px',marginRight:'10px'}}/>

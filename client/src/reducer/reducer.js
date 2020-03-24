@@ -11,6 +11,7 @@ import FetchDeleteReducer from './DeleteUser';
 import ToggleButtonReducer from './ToggleButton';
 import FetchSingleUserReducer from './FetchSingleUser';
 import UpdateUserReducer from './UpdateUser';
+import ForgotPasswordReducer from './ForgotPassword';
 import { routerReducer } from 'react-router-redux';
 
 const rootReducer = combineReducers({
@@ -18,6 +19,7 @@ const rootReducer = combineReducers({
     userActionReducer,
     loginStyleReducer,
     UpdateUserReducer,
+    ForgotPasswordReducer,
     FetchSingleUserReducer,
     ToggleButtonReducer,
     FetchDeleteReducer,

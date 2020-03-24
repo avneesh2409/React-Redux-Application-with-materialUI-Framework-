@@ -3,7 +3,7 @@ var url = require('url');
 var helper = require('../helpers/helper');
 var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
-// var fs = require('fs');
+const nodemailer = require('nodemailer');
 const log = require('node-file-logger');
 const options = {
     timeZone: 'Israel Standard Time',
@@ -238,7 +238,37 @@ module.exports.Controller = {
             });
         }
     },
-
+    // SendEmail: function(req,res){
+    //     let transport = nodemailer.createTransport({
+    //         host: 'smtp.mailtrap.io',
+    //         port: 2525,
+    //         auth: {
+    //            user: 'tftli',
+    //            pass: 'Tftus@123'
+    //         }
+    //     });
+    //     const message = {
+    //         from: 'avneeshdwivedi.tft@gmail.com', // Sender address
+    //         to: 'avneeshdwivedi@gmail.com',         // List of recipients
+    //         subject: 'Design My Model', // Subject line
+    //         text: 'Have the most fun you can in a car.' // Plain text body
+    //     };
+    //     transport.sendMail(message, function(err, info) {
+    //         if (err) {
+    //           res.status(400).json({
+    //               status:false,
+    //               message:'unable to send message',
+    //               error:err
+    //           })
+    //         } else {
+    //           res.status(200).json({
+    //               status:true,
+    //               message:'successfully sent',
+    //               result:info
+    //           })
+    //         }
+    //     });
+    // },
     MyProfile: function (req, res) {
         var email = req.decoded.email;
         log.Info('Call My Profile API email  : ', email);
@@ -250,12 +280,12 @@ module.exports.Controller = {
     },
 
     ForgetPassword: function (req, res) {
-        var hostname = req.headers.host; // hostname = 'localhost:8080'
-        var pathname = url.parse(req.url).pathname; // pathname = '/MyApp'
+        // var hostname = req.headers.host; // hostname = 'localhost:8080'
+        // var pathname = url.parse(req.url).pathname;
+        // pathname = '/MyApp'
         var option = {
-            "url": 'http://' + hostname + '/change-password',
+            "url": 'http://' + process.env.CLIENT + 'changepassword',
             "email": req.body.email
-
         }
         log.Info('Call Forget Password API email ', option.email);
         database.dbEngine.ForgotPassword(option, function (status, message, data) {
@@ -270,7 +300,7 @@ module.exports.Controller = {
             "userid": req.body.userid,
             "newpassword": req.body.newpassword,
         }
-        Option.loginRoleid = req.decoded.roleid;
+        // Option.loginRoleid = req.decoded.roleid;
         log.Info('Call ChangePassword API: ');
         if (typeof Option.userid == "undefined") {
             Option.userid = req.decoded.userid;

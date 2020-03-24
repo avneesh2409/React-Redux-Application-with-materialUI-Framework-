@@ -7,8 +7,8 @@ import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-
-import {useSelector} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
+import { forgotPassword } from '../action/forgotPassword';
 
 
 const useStyles = makeStyles(theme => ({
@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
 
 export const  ForgetPassword = () =>{
   const classes = useStyles();
-
+const dispatch = useDispatch();
   const initialState = {
     email: ""
   };
@@ -42,6 +42,8 @@ export const  ForgetPassword = () =>{
 
   function handleSubmit(event) {
    event.preventDefault();
+   dispatch(forgotPassword(data))
+   setData(initialState);
   }
 const loginstyle = useSelector(state=>state.loginStyleReducer)
   return (

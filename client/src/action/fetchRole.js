@@ -1,10 +1,10 @@
-import { FETCH_ROLE_REQUEST,FETCH_ROLE_SUCCESS,FETCH_ROLE_FAILURE } from "../constants";
+import { FETCH_ROLE_REQUEST,FETCH_ROLE_SUCCESS,FETCH_ROLE_FAILURE, SERVER_URL } from "../constants";
 import { getToken, fetchStore } from "../helpers/fetchStore";
 
 const t = getToken();
 export const fetchRole = () =>{
     const {token} = fetchStore();
-    let url = "http://localhost:8012/api/role/"+token.roleid;
+    let url = SERVER_URL + "api/role/" + token.roleid;
     const options = {
         method: 'GET',
         headers: {
@@ -32,6 +32,7 @@ export const FetchRoleSuccess = (data) =>{
     }
 }
 export const FetchRoleFailure = (error) =>{
+    alert('something went wrong!! unable to process the request');
     return {
         type:FETCH_ROLE_FAILURE,
         error

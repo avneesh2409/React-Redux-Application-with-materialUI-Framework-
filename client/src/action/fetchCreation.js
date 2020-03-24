@@ -1,9 +1,9 @@
-import { FETCH_CREATION_REQUEST,FETCH_CREATION_SUCCESS,FETCH_CREATION_FAILURE } from "../constants";
+import { FETCH_CREATION_REQUEST,FETCH_CREATION_SUCCESS,FETCH_CREATION_FAILURE,SERVER_URL } from "../constants";
 import { getToken } from "../helpers/fetchStore";
 
 const t = getToken();
 export const fetchCreation = () =>{
-    let url = "http://localhost:8012/api/admin";
+    let url = SERVER_URL + "api/admin";
     const options = {
         method: 'GET',
         headers: {
@@ -31,6 +31,7 @@ export const FetchCreationSuccess = (data) =>{
     }
 }
 export const FetchCreationFailure = (error) =>{
+    alert('something went wrong!! unable to process the request');
     return {
         type:FETCH_CREATION_FAILURE,
         error

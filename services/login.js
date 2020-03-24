@@ -4,6 +4,7 @@ var bcrypt = require('bcrypt');
 var helper = require('../helpers/helper');
 var url = require('url');
 const log = require('node-file-logger');
+const {encrypt,decrypt} = require('./../helpers/encrypt');
 // const {fetchStore} = require('../client/src/helpers/fetchStore');
 
 //-------------------Arham--------------------------------------------------//
@@ -187,11 +188,11 @@ exports.dbEngine = {
                 message = helper.MSG_LIST.SomethingWentWrong + ': ' + error;
             } else {
                 if (results.rows.length > 0) {
-
-                    var mailOptions = {
+                    let token = results.rows[0].userid;
+                     var mailOptions = {
                         to: results.rows[0].email,
                         subject: "Forgotten Password Reset! ",
-                        html: "Hello " + results.rows[0].name + ",<br><br> As per your request, we have sent you the password reset link. Click on the following link to reset your password:<br><br>" + option.url + "<br><br>Warm Regards,<br> IMALI TEAM"
+                        html: "Hello " + results.rows[0].name + ",<br><br> As per your request, we have sent you the password reset link. Click on the following link to reset your password:<br><br>" + `<a href='${option.url}?token=${token}' >Click Here</a>` + " <br><br>Warm Regards,<br> IMALI TEAM"
                     }
                     mail.sendMail(mailOptions);
                     status = true;
@@ -315,6 +316,19 @@ GetSingleUser:function(id,callback){
         //     callback(status, message, data);
         // });
     },
+    Validate_ChangePassword:function(option,callback){
+        var status = false, message = '', data = {};
+        connection.query('select * from account where userid = $1',[option.userid],function(error,results){
+                    if(error || results.rows.length == 0){
+                        log.Error("Error :" + error,'database','validate_password');
+                        message = 'token expired'
+                    }
+                    else{
+                        status = true;
+                    }
+                    callback(status,message,data);
+                        });
+},
     ChangePassword: function (Option, callback) {
         var status = false, message = '', data = {};
         var salt = bcrypt.genSaltSync(10);

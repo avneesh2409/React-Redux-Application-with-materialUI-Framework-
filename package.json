@@ -4,10 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node -r dotenv/config app.js",
     "client": "npm run start --prefix client",
-    "server": "nodemon app.js",
-    "dev": "concurrently -n 'client,server' -c 'green,red' \"npm run client\" \"npm run server\""
+    "server": "nodemon -r dotenv/config app.js",
+    "dev": "concurrently -n 'server,client' -c 'green,blue' \"npm run server\" \"npm run client\" "
   },
   "dependencies": {
     "@material-ui/core": "^4.9.3",
@@ -15,11 +15,13 @@
     "body-parser": "^1.17.1",
     "concurrently": "^5.1.0",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
     "express": "^4.14.1",
     "formidable": "^1.2.2",
     "jsonwebtoken": "^7.3.0",
     "node-file-logger": "^0.9.5",
-    "nodemailer": "^4.1.3",
+    "nodemailer": "^4.7.0",
     "nodemon": "^2.0.2",
     "pg": "^6.0.1"
   },

@@ -1,8 +1,9 @@
-import { POST_USER_FAILURE,POST_USER_SUCCESS,POST_USER_REQUEST } from '../constants'
+import { POST_USER_FAILURE,POST_USER_SUCCESS,POST_USER_REQUEST, SERVER_URL } from '../constants'
 import { getToken, fetchStore } from "../helpers/fetchStore";
 
 const t = getToken();
-export const postUsers = (url,payload) =>{
+export const postUsers = (payload) =>{
+    const url =  SERVER_URL + "api/register";
     let {token} = fetchStore();
     payload.createdby = `${token.userid}`;
     const options = {
@@ -43,6 +44,7 @@ export const PostUserSuccess = (data) =>{
   }
 }
 export const PostUserFailure = (error) =>{
+    alert('something went wrong!! unable to process the request');
     return {
         type:POST_USER_FAILURE,
         error

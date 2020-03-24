@@ -1,10 +1,10 @@
 // import React from "react";
-import { POST_IMAGE_REQUEST,POST_IMAGE_SUCCESS,POST_IMAGE_FAILURE } from "../constants";
+import { POST_IMAGE_REQUEST,POST_IMAGE_SUCCESS,POST_IMAGE_FAILURE, SERVER_URL } from "../constants";
 import { getToken } from "../helpers/fetchStore";
 
 const t = getToken();
 export const postImage = (payload) =>{
-    let url = "http://localhost:8012/api/fileupload";
+    let url = SERVER_URL + "api/fileupload";
     let data = new FormData();
     data.append('image', payload.image);
     const options = {
@@ -37,6 +37,7 @@ export const PostImageSuccess = (data) =>{
     }
 }
 export const PostImageFailure = (error) =>{
+    alert('something went wrong!! unable to process the request');
     return {
         type:POST_IMAGE_FAILURE,
         error

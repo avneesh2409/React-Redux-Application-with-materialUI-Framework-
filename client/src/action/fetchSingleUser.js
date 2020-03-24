@@ -1,9 +1,9 @@
-import { FETCH_SINGLE_USER_REQUEST,FETCH_SINGLE_USER_SUCCESS,FETCH_SINGLE_USER_FAILURE } from "../constants";
+import { FETCH_SINGLE_USER_REQUEST,FETCH_SINGLE_USER_SUCCESS,FETCH_SINGLE_USER_FAILURE, SERVER_URL } from "../constants";
 import { getToken } from "../helpers/fetchStore";
 
 const t = getToken();
 export const fetchSingleUser = (id) =>{
-    let url = "http://localhost:8012/api/singleuser/"+id;
+    let url = SERVER_URL + "api/singleuser/"+id;
     const options = {
         method: 'GET',
         headers: {
@@ -31,6 +31,7 @@ export const FetchSingleUserSuccess = (data) =>{
     }
 }
 export const FetchSingleUserFailure = (error) =>{
+    alert('something went wrong!! unable to process the request');
     return {
         type:FETCH_SINGLE_USER_FAILURE,
         error

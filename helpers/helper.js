@@ -44,7 +44,7 @@ exports.SQL_QUERY = {
     Edit_profile_check_RoleID: "SELECT * FROM account where userid = $1",
     Edit_exit_email_profile: "SELECT exists(select 1 from account where email = $1 And userid !=$2)",
     Tracking_Detail_Data: "select * from Tracking_Detail_To_S3()",
-    Delete_Users:"delete from account where userid = $1",
+    Delete_Users:"delete from account where userid = $1 or createdby = $1",
     UpdateUser:"update account set address = $1,contact = $2,gender = $3 where userid = $4",
     GetSingleUser:"select userid,email,name,gender,country,image,created_on,createdby,isactive,address,contact from account where userid = $1",
     GetAllAdmin:"select b.userid as date,b.name as name from account a,account b where a.userid = b.createdby and a.roleid < 2"

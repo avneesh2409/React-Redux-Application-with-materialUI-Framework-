@@ -26,6 +26,7 @@ export const FetchCountrySuccess = (data) =>{
     }
 }
 export const FetchCountryFailure = (error) =>{
+    alert('something went wrong!! unable to process the request');
     return {
         type:FETCH_COUNTRY_FAILURE,
         error

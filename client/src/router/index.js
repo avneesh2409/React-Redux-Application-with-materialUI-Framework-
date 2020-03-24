@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React,{useEffect} from 'react';
 // import Bar from "../components/Bar";
 // import Foo from "../components/Foo";
 import { Router, Route } from 'react-router'
@@ -10,12 +10,13 @@ import Report from '../components/Report';
 // import Home from '../components/home';
 import PageNotfound from '../components/childcomponents/404';
 import SignUp from '../components/register';
-import User from '../components/User';
+// import User from '../components/User';
 import CurrentMonth from '../components/currentMonth';
 import YearSale from '../components/yearSale';
 import LastQuarter from '../components/lastQuarter';
 import Test from '../components/Test';
-import { Registration, Users, Customers, Integrations, Reports,CurrentMonth as current,YearSale as year,LastQuater as last } from '../constants';
+import { Registration, Users, Customers,ChangePassword as change, Integrations, Reports,CurrentMonth as current,YearSale as year,LastQuater as last } from '../constants';
+import ChangePassword from '../components/registerChangePassword';
 
 
 const Routers = () => {
@@ -30,10 +31,10 @@ const Routers = () => {
         <div>
             <Dashboard />
             <Router history={history}>
-                <Route path='/test' exact component={User} />
                 <Route path = {`/${Registration}`}  exact component={SignUp} />
                 <Route path={`/${Customers}`} exact component={Customer} />
                 <Route path={`/${Integrations}`} exact component={Integration} />
+                <Route path={`/${change}`} exact component={ChangePassword} />
                 <Route path={`/${Reports}`} exact component={Report} />
                 <Route path={`/${Users}`} exact component={Test} />
                 <Route path={`/${year}`} exact component={YearSale} />

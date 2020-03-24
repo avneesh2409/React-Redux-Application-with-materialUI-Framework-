@@ -9,7 +9,7 @@ import PeopleIcon from '@material-ui/icons/People';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
-import { Registration, Users, Customers, Integrations, Reports,CurrentMonth,YearSale,LastQuater } from '../../constants';
+import { Registration,ChangePassword, Users, Customers, Integrations, Reports,CurrentMonth,YearSale,LastQuater } from '../../constants';
 import { useDispatch} from 'react-redux';
 import { push } from 'react-router-redux';
 import { storeTab } from '../../action/userAction'
@@ -17,13 +17,16 @@ import { storeTab } from '../../action/userAction'
 
 export const MainListItems = () => {
 const dispatch =  useDispatch();
-
 const clickHandler = (data) =>{
   switch(data)
   {
     case Registration:
       dispatch(storeTab(Registration))
       dispatch(push('/'+Registration))
+      break;
+    case ChangePassword:
+      dispatch(storeTab(ChangePassword))
+      dispatch(push('/'+ChangePassword))
       break;
     case Users:
       dispatch(storeTab(Users))
@@ -69,6 +72,12 @@ const clickHandler = (data) =>{
           <BarChartIcon />
         </ListItemIcon>
         <ListItemText primary={Reports} />
+      </ListItem>
+      <ListItem button onClick={()=>clickHandler(ChangePassword)}>
+        <ListItemIcon>
+        <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary={ChangePassword} />
       </ListItem>
       <ListItem button onClick={()=>clickHandler(Integrations)}>
         <ListItemIcon>

@@ -1,11 +1,11 @@
 // import React from "react";
-import { FETCH_USER_REQUEST, FETCH_USER_SUCCESS, FETCH_USER_FAILURE } from "../constants";
+import { FETCH_USER_REQUEST, FETCH_USER_SUCCESS, FETCH_USER_FAILURE, SERVER_URL } from "../constants";
 import { getToken, fetchStore } from "../helpers/fetchStore";
 
 const t = getToken();
 const {token} = fetchStore();
 export const fetchUsers = () =>{
-    let url = "http://localhost:8012/api/users/"+token.userid;
+    let url = SERVER_URL + "api/users/"+token.userid;
     const options = {
         method: 'GET',
         headers: {
@@ -33,6 +33,7 @@ export const FetchUserSuccess = (data) =>{
     }
 }
 export const FetchUserFailure = (error) =>{
+    alert('something went wrong!! unable to process the request');
     return {
         type:FETCH_USER_FAILURE,
         error

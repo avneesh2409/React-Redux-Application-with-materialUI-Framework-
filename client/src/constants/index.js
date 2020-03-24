@@ -1,4 +1,5 @@
 export const Registration = 'Registration'
+export const ChangePassword = 'ChangePassword'
 export const Users = 'User'
 export const Customers = 'Customer'
 export const Reports = 'Report'
@@ -19,6 +20,9 @@ export const POST_IMAGE_FAILURE = 'POST_IMAGE_FAILURE'
 export const POST_USER_REQUEST = 'POST_USER_REQUEST'
 export const POST_USER_SUCCESS = 'POST_USER_SUCCESS'
 export const POST_USER_FAILURE = 'POST_USER_FAILURE'
+
+export const SERVER_URL='http://localhost:8012/'
+
 export const FETCH_ROLE_REQUEST = 'FETCH_ROLE_REQUEST'
 export const FETCH_ROLE_SUCCESS = 'FETCH_ROLE_SUCCESS'
 export const FETCH_ROLE_FAILURE = 'FETCH_ROLE_FAILURE'
@@ -42,3 +46,11 @@ export const FETCH_SINGLE_USER_FAILURE = 'FETCH_SINGLE_USER_FAILURE'
 export const UPDATE_USER_REQUEST = 'UPDATE_USER_REQUEST'
 export const UPDATE_USER_SUCCESS = 'UPDATE_USER_SUCCESS'
 export const UPDATE_USER_FAILURE = 'UPDATE_USER_FAILURE'
+
+export const FORGOT_PASSWORD_REQUEST = 'FORGOT_PASSWORD_REQUEST'
+export const FORGOT_PASSWORD_SUCCESS = 'FORGOT_PASSWORD_SUCCESS'
+export const FORGOT_PASSWORD_FAILURE = 'FORGOT_PASSWORD_FAILURE'
+
+export const CHANGE_PASSWORD_REQUEST = 'CHANGE_PASSWORD_REQUEST'
+export const CHANGE_PASSWORD_SUCCESS = 'CHANGE_PASSWORD_SUCCESS'
+export const CHANGE_PASSWORD_FAILURE = 'CHANGE_PASSWORD_FAILURE'

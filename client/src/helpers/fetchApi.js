@@ -1,8 +1,10 @@
 import { getToken, fetchStore } from "./fetchStore";
+import { SERVER_URL } from "../constants";
 
 let data1 = null
 const t = getToken();
-export const  Post = async (url,credentials) =>{
+export const  Post = async (credentials) =>{
+  let url = SERVER_URL + "token";
     const options = {
         method: 'POST',
         headers: {

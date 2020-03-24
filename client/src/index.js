@@ -6,7 +6,8 @@ import { Provider } from 'react-redux';
 import store from './store';
 import Routers from './router';
 import LoginRouter from './router/beforeLoginRouter';
-import { getToken } from './helpers/fetchStore';
+import { getToken} from './helpers/fetchStore';
+// import history from './helpers/history';
 
 
 ReactDOM.render(

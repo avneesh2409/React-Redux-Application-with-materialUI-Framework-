@@ -45,8 +45,7 @@ const dispatch = useDispatch();
 
   const handleSubmit = async (event) =>{
    event.preventDefault();
-   const url = "http://localhost:8012/token"
-   const {data1} = await Post(url,data)
+   const {data1} = await Post(data)
    setData(initialState);
    if(data1 && data1.status){
     setStore(data1.token)

@@ -13,6 +13,7 @@ import { postImage } from '../action/postImage';
 import { postUsers } from '../action/postUsers';
 import { ToggleButton } from '../action/toggleButton';
 import { UpdateUser } from '../action/updateUser';
+// import { SERVER_URL } from '../constants';
 
 
 
@@ -64,7 +65,7 @@ const classes = useStyles();
 
 const submitHandler = (e) =>{
 e.preventDefault();
-const url =  "http://localhost:8012/api/register";
+
 const cred = {
   roleId: state.role,
   Name: state.first+' '+state.last,
@@ -76,14 +77,12 @@ const cred = {
   country:state.country,
   image:image.data,
 }
-dispatch(postUsers(url,cred))
+dispatch(postUsers(cred))
 setState(initialState)
 uploadImage = 'Upload Image'
-console.log(e)
 }
 const updateHandler = (e) =>{
   e.preventDefault();
-  console.log("we got the request from update handler:-",state);
   let payload = {
     userid:state.userid,
     address:state.address,
@@ -94,7 +93,7 @@ const updateHandler = (e) =>{
   setState(initialState)
   dispatch(ToggleButton(false,"Sign Up"));
 }
-const onChangeHandler = async (e) =>{
+const onChangeHandler = (e) =>{
   if(e.target.name === 'image')
   {
   let type = {'image/jpeg':'image/jpeg','image/jpg':'image/jpg','image/png':'image/png'};

@@ -146,8 +146,7 @@ const EnhancedTableToolbar = props => {
   const clickHandler = (x) =>{
 for(let i = 0;i < x.length;i++)
    {
-      let url = "http://localhost:8012/api/delete/"+x[i];
-      dispatch(deleteUser(url));
+      dispatch(deleteUser(x[i]));
       dispatch(push('/'+Registration));
    }
     }
@@ -231,7 +230,7 @@ export default function EnhancedTable() {
   const [orderBy, setOrderBy] = React.useState('userId');
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
-  const [dense, setDense] = React.useState(false);
+  const dense = false;
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
   const handleRequestSort = (event, property) => {

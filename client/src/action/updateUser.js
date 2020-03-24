@@ -1,9 +1,9 @@
-import { UPDATE_USER_FAILURE,UPDATE_USER_SUCCESS,UPDATE_USER_REQUEST } from '../constants'
+import { UPDATE_USER_FAILURE,UPDATE_USER_SUCCESS,UPDATE_USER_REQUEST, SERVER_URL } from '../constants'
 import { getToken} from "../helpers/fetchStore";
 
 const t = getToken();
 export const UpdateUser = (payload) =>{
-    let url = "http://localhost:8012/api/update";
+    let url = SERVER_URL + "api/update";
     const options = {
         method: 'PATCH',
         headers: {
@@ -43,6 +43,7 @@ export const UpdateUserSuccess = (data) =>{
    }
 }
 export const UpdateUserFailure = (error) =>{
+    alert('something went wrong!! unable to process the request');
     return {
         type:UPDATE_USER_FAILURE,
         error
